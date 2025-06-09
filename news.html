@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   </head>
   <body class="min-h-screen flex flex-col bg-black bg-[url(Assets/images/backgrounds/background_50.png)] md:bg-[url(assets/images/backgrounds/backgroundXflip_50.png)]">
-    <header id="bgHeader" class="bg-black mask-to-t fixed h-[240px] sm:h-[180px] z-100 w-full flex transition-transform duration-300 ease-in-out"></header>
+    <header id="bgHeader" class="bg-black mask-to-t fixed h-[240px] sm:h-[180px] z-100 w-full flex transition-transform duration-300 ease-in-out full-hidden"></header>
     <header id="mainHeader" class="fixed h-[180px] sm:h-[128px] pt-[20px] pb-[20px] z-100 w-full flex justify-between transition-transform duration-300 ease-in-out">
       <div id="scrollToTop" class="transition-opacity duration-300 ease-in-out pl-[30px] h-full flex flex-col items-start justify-center md:opacity-100">
         <a href="about.html">
@@ -101,11 +101,12 @@
         </li>
       </ul>
     </nav>
-    <main class="flex flex-col flex-grow mainminh pt-[180px] sm:pt-[132px] md:ml-[150px]">
+    <main class="flex flex-col flex-grow mainminh pt-[200px] full-padding sm:pt-[132px] md:ml-[150px]">
       <section class="w-full [word-spacing:0.1rem] leading-relaxed max-w-[1000px] mx-auto flex flex-col p-0 sm:p-12 overflow-y-auto text-secondary bg-black/30 mask-to-t2">
         <div class="flex flex-col">
-          <div class="flex flex-col mb-[150px]">
-            <h1 class="text-style-primary p-[24px] text-[30px] mb-[24px]"><span class="flex justify-start items-center">One Swallow Two premieres at Whistler Film Festival!</span><span class="text-secondary text-[25px] flex justify-start items-center">December 5th, 2024</span></h1>
+         
+          <div class="flex flex-col mb-[100px]">
+            <h1 class="text-style-primary p-[24px] pt-0 pb-[12px] text-[30px]"><span class="flex justify-start items-center">One Swallow Two premieres at Whistler Film Festival!</span><span class="text-secondary text-[25px] flex justify-start items-center">December 5th, 2024</span></h1>
             <div class="grid">
               <div class="flex flex-col p-[24px] md:pl-[24px] gap-y-[24px]">
                 <p>
@@ -118,9 +119,10 @@
               </div>
             </div>
           </div>
+          
           <div id="chrome" class="scroll-mt-[170px] flex flex-col">
-            <h1 class="text-style-primary p-[24px] text-[30px] mb-[24px]"><span class="flex justify-start items-center">Chrome wins best Score at POV24!</span><span class="text-secondary text-[25px] flex justify-start items-center">September 29th, 2024</span></h1>
-              <div class="flex flex-col p-6 gap-6 md:gap-x-6 mb-[150px]">
+            <h1 class="text-style-primary p-[24px] pb-[12px] text-[30px] "><span class="flex justify-start items-center">Chrome wins best Score at POV24!</span><span class="text-secondary text-[25px] flex justify-start items-center">September 29th, 2024</span></h1>
+              <div class="flex flex-col p-6 gap-6 md:gap-x-6 mb-[100px]">
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <p class="md:hidden">
@@ -153,22 +155,26 @@
                   </p>
                 </div>
 
-                <img src="Assets/images/embed/POV24_ChromeTeam.jpg" class="w-full h-auto mb-0" />
+                <img src="Assets/images/embed/POV24_ChromeTeam.jpg" class="w-full h-auto mb-0"/>
               </div>  
-          <div class="flex flex-col mb-[150px]">
-            <h1 class="text-style-primary p-[24px] text-[30px] mb-[24px]"><span class="flex justify-start items-center">NEW RELEASE: Chrome OST</span><span class="text-secondary text-[25px] flex justify-start items-center">September 28th, 2024</span></h1>
+          </div>
+
+          <div class="flex flex-col mb-[100px]">
+            <h1 class="text-style-primary p-[24px] pb-[12px] text-[30px]"><span class="flex justify-start items-center">NEW RELEASE: Chrome OST</span><span class="text-secondary text-[25px] flex justify-start items-center">September 28th, 2024</span></h1>
             <div class="grid p-[24px] md:grid-cols-2">
               <a href="chrome.html" target="_blank"><img class="button3 flex flex-col" src="Assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.png"></a>
               <p class="p-[24px] pr-0 pl-0 md:pt-0 md:pl-[24px]">The Original Motion Picture Soundtrack for <span class="italic">Chrome</span> is <a href="chrome.html" target="_blank" class="button4">out now</a> on all major streaming services!</p>
             </div>
           </div>
-          <div class="flex flex-col mb-[150px]">
-            <h1 class="text-style-primary p-[24px] text-[30px] mb-[24px]"><span class="flex justify-start items-center"></span>NEW RELEASE: Euphony<span class="text-secondary text-[25px] flex justify-start items-center">August 9th, 2024</span></h1>
+
+          <div class="flex flex-col mb-[100px]">
+            <h1 class="text-style-primary p-[24px] pb-[12px] text-[30px]"><span class="flex justify-start items-center"></span>NEW RELEASE: Euphony<span class="text-secondary text-[25px] flex justify-start items-center">August 9th, 2024</span></h1>
             <div class="grid p-[24px] md:grid-cols-2">
               <a href="euphony.html" target="_blank"><img class="button3 flex flex-col" src="Assets/images/embed/Euphony_Final.png"></a>
               <p class="p-[24px] pr-0 pl-0 md:pt-0 md:pl-[24px]">Mungo McLaggan's latest album <span class="italic">Euphony</span> is <a href="euphony.html" target="_blank" class="button4">out now</a> on all major streaming services!</p>
             </div>
           </div>
+
         </div>
       </section>
     </main>
