@@ -23,10 +23,7 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-    --blur-xs: 4px;
     --blur-sm: 8px;
-    --blur-md: 12px;
-    --blur-lg: 16px;
     --aspect-video: 16 / 9;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -665,6 +662,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .font-\[Wittgenstein\] {
+    font-family: Wittgenstein;
   }
   .font-style-2 {
     font-family: roboto;
