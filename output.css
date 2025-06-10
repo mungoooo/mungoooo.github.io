@@ -806,10 +806,10 @@
       }
     }
   }
-  .hover\:opacity-0 {
+  .hover\:opacity-30 {
     &:hover {
       @media (hover: hover) {
-        opacity: 0%;
+        opacity: 30%;
       }
     }
   }
