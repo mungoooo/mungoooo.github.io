@@ -261,14 +261,18 @@
     let lastScrollTop = 0;
     let lastScrollDownPos = 0;
 
-    const scrollDownThreshold = 20; // Distance scrolled down before hiding header
-    const scrollUpThreshold = 100;   // Distance scrolled up before showing header
+    const scrollDownThreshold = 20; // px required to hide header
+    const scrollUpThreshold = 100;   // px required to show header
 
     window.addEventListener('scroll', () => {
       const currentScroll = window.scrollY;
 
       if (window.innerWidth < 768) {
-        if (currentScroll > lastScrollTop) {
+        if (currentScroll === 0) {
+          // Always show header at top of page
+          mainHeader.classList.remove('-translate-y-full');
+          bgHeader.classList.remove('-translate-y-full');
+        } else if (currentScroll > lastScrollTop) {
           // Scrolling down
           if (currentScroll - lastScrollTop > scrollDownThreshold) {
             mainHeader.classList.add('-translate-y-full');
