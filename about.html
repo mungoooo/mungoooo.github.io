@@ -210,17 +210,23 @@
   (() => {
     let lastScrollTop = 0;
     let lastScrollDownPos = 0;
-    const scrollUpThreshold = 500;
+
+    const scrollDownThreshold = 20; // Distance scrolled down before hiding header
+    const scrollUpThreshold = 100;   // Distance scrolled up before showing header
 
     window.addEventListener('scroll', () => {
       const currentScroll = window.scrollY;
 
       if (window.innerWidth < 768) {
-        if (currentScroll > lastScrollTop && currentScroll > 50) {
-          mainHeader.classList.add('-translate-y-full');
-          bgHeader.classList.add('-translate-y-full');
-          lastScrollDownPos = currentScroll;
+        if (currentScroll > lastScrollTop) {
+          // Scrolling down
+          if (currentScroll - lastScrollTop > scrollDownThreshold) {
+            mainHeader.classList.add('-translate-y-full');
+            bgHeader.classList.add('-translate-y-full');
+            lastScrollDownPos = currentScroll;
+          }
         } else if (currentScroll < lastScrollTop) {
+          // Scrolling up
           if (lastScrollDownPos - currentScroll > scrollUpThreshold) {
             mainHeader.classList.remove('-translate-y-full');
             bgHeader.classList.remove('-translate-y-full');
