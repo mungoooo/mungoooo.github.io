@@ -207,24 +207,30 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // Scroll-hide logic for mobile (< md breakpoint)
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.scrollY;
+  (() => {
+    let lastScrollTop = 0;
+    let lastScrollDownPos = 0;
+    const scrollUpThreshold = 500;
 
-    if (window.innerWidth < 768) {
-      if (currentScroll > lastScrollTop && currentScroll > 50) {
-        // Scrolling down
-        mainHeader.classList.add('-translate-y-full');
-        bgHeader.classList.add('-translate-y-full');
-      } else {
-        // Scrolling up
-        mainHeader.classList.remove('-translate-y-full');
-        bgHeader.classList.remove('-translate-y-full');
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      if (window.innerWidth < 768) {
+        if (currentScroll > lastScrollTop && currentScroll > 50) {
+          mainHeader.classList.add('-translate-y-full');
+          bgHeader.classList.add('-translate-y-full');
+          lastScrollDownPos = currentScroll;
+        } else if (currentScroll < lastScrollTop) {
+          if (lastScrollDownPos - currentScroll > scrollUpThreshold) {
+            mainHeader.classList.remove('-translate-y-full');
+            bgHeader.classList.remove('-translate-y-full');
+          }
+        }
       }
-    }
 
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-  });
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  })();
 
   // On resize, reset visibility on md+ screens
   window.addEventListener('resize', () => {
