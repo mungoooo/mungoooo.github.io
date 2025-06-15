@@ -246,9 +246,6 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
-  .mt-12 {
-    margin-top: calc(var(--spacing) * 12);
-  }
   .mt-\[-8px\] {
     margin-top: -8px;
   }
@@ -273,8 +270,8 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
-  .mb-24 {
-    margin-bottom: calc(var(--spacing) * 24);
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
   }
   .mb-\[5px\] {
     margin-bottom: 5px;
@@ -332,9 +329,6 @@
   }
   .h-\[60px\] {
     height: 60px;
-  }
-  .h-\[68cqh\] {
-    height: 68cqh;
   }
   .h-\[180px\] {
     height: 180px;
@@ -881,11 +875,6 @@
   .sm\:pt-\[25px\] {
     @media (width >= 40rem) {
       padding-top: 25px;
-    }
-  }
-  .sm\:pt-\[30px\] {
-    @media (width >= 40rem) {
-      padding-top: 30px;
     }
   }
   .sm\:pt-\[132px\] {
