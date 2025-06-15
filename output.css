@@ -1186,20 +1186,28 @@ body {
 .mainminh {
   min-height: calc(100vh - 130px);
 }
-.mainminh2 {
+.mainminh-chrm {
   min-height: calc(100vh - 248px);
 }
 @media (min-width: 640px) {
-  .mainminh2 {
+  .mainminh-chrm {
     min-height: calc(100vh - 200px);
   }
 }
-.mainminh3 {
+.mainminh-vr {
+  min-height: calc(100vh - 48px);
+}
+@media (min-width: 640px) {
+  .mainminh-vr {
+    min-height: calc(100vh - 200px);
+  }
+}
+.mainminh-poster {
   min-height: 100%;
   min-width: 100%;
 }
 @media (min-width: 768px) {
-  .mainminh3 {
+  .mainminh-poster {
     max-height: calc(100vh - 200px);
   }
 }
