@@ -244,6 +244,9 @@
   .mt-\[24px\] {
     margin-top: 24px;
   }
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
   .mt-\[60px\] {
     margin-top: 60px;
   }
@@ -276,6 +279,9 @@
   }
   .mb-\[30px\] {
     margin-bottom: 30px;
+  }
+  .mb-\[37px\] {
+    margin-bottom: 37px;
   }
   .mb-\[48px\] {
     margin-bottom: 48px;
@@ -773,6 +779,16 @@
   .sm\:mt-\[-12px\] {
     @media (width >= 40rem) {
       margin-top: -12px;
+    }
+  }
+  .sm\:mt-\[0px\] {
+    @media (width >= 40rem) {
+      margin-top: 0px;
+    }
+  }
+  .sm\:mb-\[0px\] {
+    @media (width >= 40rem) {
+      margin-bottom: 0px;
     }
   }
   .sm\:hidden {
