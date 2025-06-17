@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Mungo McLaggan
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="no-full-padding min-h-screen flex flex-col bg-black bg-[url(assets/images/backgrounds/background_50.png)] md:bg-[url(assets/images/backgrounds/backgroundXflip_10.png)]">
+    <header id="bgHeader" class="bg-black mask-to-t fixed h-[240px] sm:h-[180px] w-full flex transition-transform duration-300 ease-in-out full-hidden-headerbg-work full-index-headerbg-work"></header>
+    <header id="mainHeader" class="fixed h-[180px] sm:h-[128px] pt-[20px] pb-[20px] z-100 w-full flex justify-between transition-transform duration-300 ease-in-out font-style-2 full-header-width-work">
+      <div id="scrollToTop" class="transition-opacity duration-300 ease-in-out pl-[30px] h-full flex flex-col items-start justify-center md:opacity-100">
+        <a href="../about/">
+          <h1 class="font-[700] text-[35px] pb-[5px] tracking-widest text-nowrap">
+          MUNGO <span class="inline sm:hidden"><br></span> MCLAGGAN
+          </h1>
+        </a>
+        <h2 class="text-[20px] text-secondary mt-[-8px] sm:mt-[-12px] mb-[8px]">
+          COMPOSER
+        </h2>
+        <div class="button-group flex opacity-80 space-x-3">
+          <div class="button">
+            <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
+              <img src="../../assets/icons/Instagram_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
+              <img src="../../assets/icons/Spotify_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
+              <img src="../../assets/icons/AppleMusic_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
+              <img src="../../assets/icons/IMDb.png" class="h-[30px]">
+            </a>
+          </div>
+        </div>
+      </div>
+      <menu class="relative flex items-end justify-end text-[30px] pr-[20px] md:hidden w-full">
+        <button id="menuButton" class="text-button focus:outline-none z-50">
+          Menu
+        </button>
+      </menu>
+      <ul id="menuOverlay" 
+        class="opacity-0 pointer-events-none transition-opacity duration-300 md:hidden absolute left-0 pl-[10px] top-0 right-[130px] h-[180px] sm:h-[128px] bg-black w-full mask-to-t2 z-40 flex flex-col justify-center sm:justify-start sm:pt-[25px] gap-y-[15px] sm:gap-y-[0px]">
+        <li class="flex items-center justify-between text-[25px] pr-[4vw] sm:pb-[28px] sm:pr-[6vw] pl-[20px]">
+          <a href="../about/" class="text-button">About</a>
+          <span class="w-[2px] h-[30px] bg-white/30 mx-2"></span>
+          <a href="../work/" class="text-button selected">Work</a>
+          <span class="w-[2px] h-[30px] bg-white/30 mx-2"></span>
+          <a href="../news/" class="text-button">News</a>
+          <span class="w-[2px] h-[30px] bg-white/30 mx-2"></span>
+          <a href="../contact/" class="text-button">Contact</a>
+        </li>
+        <li class="button-group w-[156px] flex justify-start items-end ml-[20px] opacity-80 space-x-3">
+          <div class="button">
+            <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
+              <img src="../../assets/icons/Instagram_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
+              <img src="../../assets/icons/Spotify_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
+              <img src="../../assets/icons/AppleMusic_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
+              <img src="../../assets/icons/IMDb.png" class="h-[30px]">
+            </a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <nav class="invisible md:visible md:w-[150px] h-full mt-[180px] w-[250px] fixed pl-[20px] z-1000 font-style-2">
+      <ul class="grid grid-cols-1 space-y-9 text-[20px] font-bold tracking-widest">
+        <li class="flex justify-end">
+          <a href="../about/" class="text-button">About</a>
+        </li>
+        <li class="flex justify-end">
+          <a href="../work/" class="text-button selected">Work</a>
+        </li>
+        <li class="flex justify-end">
+          <a href="../news/" class="text-button">News</a>
+        </li>
+        <li class="flex justify-end">
+          <a href="../contact/" class="text-button">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="flex-grow flex flex-col relative">
+      <main class="flex flex-col flex-grow mainminh pt-[200px] full-padding2 sm:pt-[132px] md:ml-[150px]">
+      <section class="w-full [word-spacing:0.1rem] leading-relaxed max-w-[2000px] mx-auto flex flex-col md:space-y-8 md:p-12 full-work-padding pt-[20px] overflow-y-hidden">
+        
+        <div class="flex flex-col mainminh-vr relative">
+          <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover opacity-80 -z-10">
+            <source src="../../assets/videos/Vertical_Remains_Edit.mp4" type="video/mp4"/>
+          </video>
+          <div class="flex flex-col pt-[100px] text-[20px] text-primary">
+            <div class="flex items-center justify-center mb-[10px] text-[30px] text-style-primary font-style-2">
+              "Vertical Remains"
+            </div>
+            <div class="flex items-center justify-center mb-[10px]">
+              Short Film (2025)
+            </div>
+            <div class="flex items-center justify-center">
+              <span class="italic pr-[5px]">Directed by:</span>Aadi Bhandari
+            </div>
+          </div>
+          <div class="flex items-center justify-center pt-[30px] sm:pb-[70px]">
+            <div class="w-full max-w-[1000px] aspect-video px-4">
+              <iframe class="w-full h-full rounded-xl" src="https://www.youtube.com/embed/lRgII2VKb38?si=Qlw34IM9JsidO6yQ" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative md:grid md:grid-cols-2 mainminh-poster">
+          <div class="h-full mainminh-poster">
+            <img src="../../assets/images/embed/Pulse.jpg" class="flex w-full h-full items-center justify-center object-contain md:opacity-80 opacity-50"/>
+          </div>
+          <div class="absolute inset-0 flex flex-col justify-center items-center text-primary text-[20px] pt-[30px] h-full md:static md:pt-0 md:items-center md:justify-center">
+            <div class="mb-[10px] text-[30px] text-style-primary font-style-2">
+              "Pulse"
+            </div>
+            <div class="mb-[10px] text-center">
+              Short Film (2025)
+            </div>
+            <div class="text-center">
+              <span class="italic pr-[5px]">Directed by:</span>Ben Mouland
+            </div>
+            <div class="button2 pt-[30px]">
+              <a href="https://www.imdb.com/title/tt34894135/" target="_blank">
+                <img src="../../assets/icons/IMDb.png" class="h-[40px]">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col mainminh-chrm relative">
+          <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover opacity-80 -z-10">
+            <source src="../../assets/videos/002.mp4" type="video/mp4"/>
+          </video>
+          <div class="flex flex-col pt-[100px] text-[20px]">
+            <div class="flex items-center justify-center mb-[10px] text-[30px] text-style-primary font-style-2">
+              "Chrome"
+            </div>
+            <div class="flex items-center justify-center mb-[10px]">
+              Short Film (2024)
+            </div>
+            <div class="flex items-center justify-center">
+              <span class="italic pr-[5px]">Directed by:</span>Joshua Brad-Lee Garrido
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 items-center justify-center pt-[30px] pl-[30px] pr-[30px] relative">       
+            <div>
+              <iframe class="max-w-[750px] mb-6" style="border-radius:12px" src="https://open.spotify.com/embed/album/2jMIjOiD1fpCB0EMa72EaU?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <a class="button4 italic no-underline flex max-w-[750px] items-center justify-center mb-12" href="../releases/chrome/" target="_blank">OST OUT NOW</a>
+            </div>
+            <div class="grid grid-rows-2 items-center justify-center">
+              <img src="../../assets/laurels/chrome/laurels_cisa-officialselection_white.png" class="max-h-[250px]">
+              <img src="../../assets/laurels/chrome/NYUSFF_2025_Honorable_Laurel_white.png" class="max-h-[200px]">
+            </div>
+          </div>
+        </div>
+
+        <div class="relative md:grid md:grid-cols-2 mainminh-poster">
+          <div class="h-full mainminh-poster">
+            <img src="../../assets/images/embed/1s2.png" class="flex w-full h-full items-center justify-center object-contain md:opacity-80 opacity-50"/>
+          </div>
+          <div class="absolute inset-0 flex flex-col justify-center items-center text-primary text-[20px] pt-[30px] md:static md:pt-0 md:items-center md:justify-center">
+            <div class="mb-[10px] text-[30px] text-style-primary text-center font-style-2">
+              "One Swallow Two"
+            </div>
+            <div class="mb-[10px] text-center">
+              Short Film (2024)
+            </div>
+            <div class="text-center">
+              <span class="italic pr-[5px]">Directed by:</span>Taryn Foster
+            </div>
+            <div class="button2 pt-[30px]">
+              <a href="https://www.imdb.com/title/tt28080250/" target="_blank">
+                <img src="../../assets/icons/IMDb.png" class="h-[40px]">
+              </a>
+            </div>
+          </div>
+        </div>
+                    
+      </section>
+      </main>
+      <footer class="w-full items-center justify-center opacity-65 flex flex-col space-y-2 md:static md:min-h-[80px] absolute bottom-0 z-50 h-[60px] bg-black/60 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none">
+        <div class="inline text-center justify-start text-3xl">
+          <h1 class="text-secondary text-[15px]">
+            Copyright © 2025 Mungo McLaggan
+          </h1>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script>
+
+  function hideWork() {
+    const el = document.querySelector(".full-index-delay");
+    el.classList.add("hidden");
+    setTimeout(() => {
+      el.style.zIndex = "0"; // or -1 if safe
+    }, 500);
+  }
+
+  function showWork() {
+    const el = document.querySelector(".full-index-delay");
+    el.style.zIndex = "999";
+    requestAnimationFrame(() => {
+      el.classList.remove("hidden");
+    });
+  }
+
+  const menuButton = document.getElementById('menuButton');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const scrollToTop = document.getElementById('scrollToTop');
+  const mainHeader = document.querySelectorAll('header')[1]; // Your main header
+  const bgHeader = document.getElementById('bgHeader'); // Black background header
+
+  let lastScrollTop = 0;
+
+  function toggleMenu() {
+    menuOverlay.classList.toggle('opacity-0');
+    menuOverlay.classList.toggle('pointer-events-none');
+    scrollToTop.classList.toggle('opacity-0'); // Also toggle scrollToTop
+  }
+
+  function closeMenu() {
+    menuOverlay.classList.add('opacity-0');
+    menuOverlay.classList.add('pointer-events-none');
+    scrollToTop.classList.remove('opacity-0'); // Ensure it's visible again
+  }
+
+  // Menu button click
+  menuButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
+  });
+
+  // Prevent clicks inside the menu from closing it
+  menuOverlay.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  // Close menu when clicking anywhere else
+  document.addEventListener('click', () => {
+    closeMenu();
+  });
+
+  // Smooth scroll to top
+  scrollToTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  (() => {
+    let lastScrollTop = 0;
+    let lastScrollDownPos = 0;
+
+    const scrollDownThreshold = 20; // px required to hide header
+    const scrollUpThreshold = 500;   // px required to show header
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      if (window.innerWidth < 768) {
+        if (currentScroll === 0) {
+          // Always show header at top of page
+          mainHeader.classList.remove('-translate-y-full');
+          bgHeader.classList.remove('-translate-y-full');
+        } else if (currentScroll > lastScrollTop) {
+          // Scrolling down
+          if (currentScroll - lastScrollTop > scrollDownThreshold) {
+            mainHeader.classList.add('-translate-y-full');
+            bgHeader.classList.add('-translate-y-full');
+            lastScrollDownPos = currentScroll;
+          }
+        } else if (currentScroll < lastScrollTop) {
+          // Scrolling up
+          if (lastScrollDownPos - currentScroll > scrollUpThreshold) {
+            mainHeader.classList.remove('-translate-y-full');
+            bgHeader.classList.remove('-translate-y-full');
+          }
+        }
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  })();
+
+  // On resize, reset visibility on md+ screens
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      mainHeader.classList.remove('-translate-y-full');
+      bgHeader.classList.remove('-translate-y-full');
+    }
+  });
+
+  // FORM: Save and load form input values with localStorage
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    if (!form) return;
+
+    const inputs = form.querySelectorAll("input, textarea");
+
+    inputs.forEach((input) => {
+      const saved = localStorage.getItem(input.name);
+      if (saved) input.value = saved;
+
+      input.addEventListener("input", () => {
+        localStorage.setItem(input.name, input.value);
+      });
+    });
+  });
+</script>

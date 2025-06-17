@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Mungo McLaggan
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="min-h-screen flex flex-col bg-black bg-[url(assets/images/backgrounds/background_50.png)] md:bg-[url(assets/images/backgrounds/backgroundXflip_25.png)]">
+    <header id="bgHeader" class="bg-black mask-to-t fixed h-[240px] sm:h-[180px] w-full flex transition-transform duration-300 ease-in-out full-hidden-headerbg full-index-headerbg"></header>
+    <header id="mainHeader" class="fixed h-[180px] sm:h-[128px] pt-[20px] pb-[20px] z-100 w-full flex justify-between transition-transform duration-300 ease-in-out font-style-2 full-header-width">
+      <div id="scrollToTop" class="transition-opacity duration-300 ease-in-out pl-[30px] h-full flex flex-col items-start justify-center md:opacity-100">
+        <a href=".">
+          <h1 class="font-[700] text-[35px] pb-[5px] tracking-widest text-nowrap">
+          MUNGO <span class="inline sm:hidden"><br></span> MCLAGGAN
+          </h1>
+        </a>
+        <h2 class="text-[20px] text-secondary mt-[-8px] sm:mt-[-12px] mb-[8px]">
+          COMPOSER
+        </h2>
+        <div class="button-group flex opacity-80 space-x-3">
+          <div class="button">
+            <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
+              <img src="../../assets/icons/Instagram_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
+              <img src="../../assets/icons/Spotify_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
+              <img src="../../assets/icons/AppleMusic_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
+              <img src="../../assets/icons/IMDb.png" class="h-[30px]">
+            </a>
+          </div>
+        </div>
+      </div>
+      <menu class="relative flex items-end justify-end text-[30px] pr-[20px] md:hidden w-full">
+        <button id="menuButton" class="text-button focus:outline-none z-50">
+          Menu
+        </button>
+      </menu>
+      <ul id="menuOverlay" 
+        class="opacity-0 pointer-events-none transition-opacity duration-300 md:hidden absolute left-0 pl-[10px] top-0 right-[130px] h-[180px] sm:h-[128px] bg-black w-full mask-to-t2 z-40 flex flex-col justify-center sm:justify-start sm:pt-[25px] gap-y-[15px] sm:gap-y-[0px]">
+        <li class="flex items-center justify-between text-[25px] pr-[4vw] sm:pb-[28px] sm:pr-[6vw] pl-[20px]">
+          <a href="../about/" class="text-button selected">About</a>
+          <span class="w-[2px] h-[30px] bg-white/30 mx-2"></span>
+          <a href="../work/" class="text-button">Work</a>
+          <span class="w-[2px] h-[30px] bg-white/30 mx-2"></span>
+          <a href="../news/" class="text-button">News</a>
+          <span class="w-[2px] h-[30px] bg-white/30 mx-2"></span>
+          <a href="../contact/" class="text-button">Contact</a>
+        </li>
+        <li class="button-group w-[156px] flex justify-start items-end ml-[20px] opacity-80 space-x-3">
+          <div class="button">
+            <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
+              <img src="../../assets/icons/Instagram_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
+              <img src="../../assets/icons/Spotify_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
+              <img src="../../assets/icons/AppleMusic_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
+              <img src="../../assets/icons/IMDb.png" class="h-[30px]">
+            </a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <nav class="invisible md:visible md:w-[150px] h-full mt-[180px] w-[250px] fixed pl-[20px] z-1000 font-style-2">
+      <ul class="grid grid-cols-1 space-y-9 text-[20px] font-bold tracking-widest">
+        <li class="flex justify-end">
+          <a href="../about/" class="text-button selected">About</a>
+        </li>
+        <li class="flex justify-end">
+          <a href="../work/" class="text-button">Work</a>
+        </li>
+        <li class="flex justify-end">
+          <a href="../news/" class="text-button">News</a>
+        </li>
+        <li class="flex justify-end">
+          <a href="../contact/" class="text-button">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex flex-col flex-grow mainminh pt-[200px] sm:pt-[132px] md:ml-[150px] full-padding">
+      <section class="w-full [word-spacing:0.1rem] leading-relaxed max-w-[1000px] mx-auto flex flex-col space-y-8 p-6 sm:p-12 overflow-y-auto text-secondary bg-black/30 mask-to-t2">
+        <div class="flex flex-col md:grid md:grid-cols-2">
+          <img src="../../assets/images/embed/ig_pfp.jpg">
+          <p class="text-[clamp(1.5rem,4vw,3rem)] md:text-[clamp(1.5rem,3vw,2rem)] pt-3 md:pt-0 md:pl-6 self-end text-style-primary font-style-2">
+          Mungo McLaggan is a British-Canadian <span class="text-style-primary">film composer</span> based in Vancouver, Canada.
+          </p>
+        </div>
+        <div class="flex flex-col mt-[-15px] md:mt-0 mb-[60px] space-y-[24px]">
+          <p>
+            Growing up in the UK, Mungo’s journey into musical composition arguably started at age 5 when he began studying piano. Throughout his school days, he sang in various choirs amassing almost a decade of choral singing experience. His musical practices have led him to perform in many renowned venues across England including <span class="text-style-primary">Smith Square Hall, London</span>, and <span class="text-style-primary">Queen's College, Oxford</span>.
+          </p>
+          <p>
+            As a natural born performer, Mungo got his first taste of the film industry in front of the camera as a child actor. Later, as a graduate of the <a class="button4" target="_blank" href="https://www.ubc.ca/">University of British Columbia</a>'s highly selective <span class="text-style-primary">Film Production</span> program, he gained a deep understanding of all assets of film and media production, putting him in a uniquely versatile position as a composer.
+          </p>
+          <p>
+            Mungo’s work thus seeks to explore new ways in which music and visual media can coalesce to serve a higher narrative and emotional function.
+          </p>
+          <p>
+            Mungo's recent work includes scores for a number of short films spanning a diverse range of genres. His music, including his recent <a class="button4" href="news/#chrome">award-winning</a> score for the short film <span class="text-style-primary italic">Chrome</span>, can be found on all major streaming services.
+          </p>
+        </div>
+        <span class="w-full h-[2px] bg-white/30"></span>
+
+
+        <div class="flex flex-col space-y-[100px] mt-[60px] font-style-2">
+
+          <div class="pr-[24px] pl-[24px]">
+            <h1 class="text-style-primary text-center text-[30px] mb-[24px] md:mb-[50px]">LATEST RELEASE:</h1>
+            <div class="flex flex-col md:grid md:grid-cols-2">
+              <a href="chrome/" target="_blank"> <img class="button3" src="../../assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg"></a>
+              <h1 class="flex flex-col justify-center items-center text-center text-style-primary text-[30px] mt-[24px] md:mt-0 md:ml-[24px]">Chrome (Original Motion Picture Soundtrack)<span class="text-secondary text-[25px] text-center">September 28th, 2024</span></h1>
+            </div>
+          </div>
+
+          <span class="w-full h-[2px] bg-white/30"></span>
+          
+          <div class="pr-[24px] pl-[24px] mb-[24px] font-style-2">
+            <h1 class="text-style-primary text-center text-[30px] mb-[20px] font-style-2">-- RECENT NEWS --</h1>
+            <div class="flex flex-col">
+              <h1 class="text-style-primary text-[30px] mb-[30px]"><span class="flex justify-start items-center">One Swallow Two premieres at Whistler Film Festival!</span><span class="text-secondary text-[25px] flex justify-start items-center">December 5th, 2024</span></h1>
+              <a href="news/" target="_blank"> <img class="button3" src="../../assets/images/embed/1s2.png"></a>
+            </div>
+            <h1 class="text-secondary text-center text-[25px] mt-[24px] font-[Wittgenstein]">(more on the <a href="news/" class="font-light button4">news</a> page)</h1>
+          </div>
+
+        </div>
+        
+      </section>
+    </main>
+    <footer class=" flex flex-col flex-grow min-h-[80px] w-full items-center justify-center space-y-2 opacity-65">
+      <div class="inline text-center justify-start text-3xl">
+        <h1 class="text-secondary text-[15px]">
+          Copyright © 2025 Mungo McLaggan
+        </h1>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+
+  function hideWork() {
+    const el = document.querySelector(".full-index-delay");
+    el.classList.add("hidden");
+    setTimeout(() => {
+      el.style.zIndex = "0"; // or -1 if safe
+    }, 500);
+  }
+
+  function showWork() {
+    const el = document.querySelector(".full-index-delay");
+    el.style.zIndex = "999";
+    requestAnimationFrame(() => {
+      el.classList.remove("hidden");
+    });
+  }
+
+  const menuButton = document.getElementById('menuButton');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const scrollToTop = document.getElementById('scrollToTop');
+  const mainHeader = document.querySelectorAll('header')[1]; // Your main header
+  const bgHeader = document.getElementById('bgHeader'); // Black background header
+
+  let lastScrollTop = 0;
+
+  function toggleMenu() {
+    menuOverlay.classList.toggle('opacity-0');
+    menuOverlay.classList.toggle('pointer-events-none');
+    scrollToTop.classList.toggle('opacity-0'); // Also toggle scrollToTop
+  }
+
+  function closeMenu() {
+    menuOverlay.classList.add('opacity-0');
+    menuOverlay.classList.add('pointer-events-none');
+    scrollToTop.classList.remove('opacity-0'); // Ensure it's visible again
+  }
+
+  // Menu button click
+  menuButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
+  });
+
+  // Prevent clicks inside the menu from closing it
+  menuOverlay.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  // Close menu when clicking anywhere else
+  document.addEventListener('click', () => {
+    closeMenu();
+  });
+
+  // Smooth scroll to top
+  scrollToTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  (() => {
+    let lastScrollTop = 0;
+    let lastScrollDownPos = 0;
+
+    const scrollDownThreshold = 20; // px required to hide header
+    const scrollUpThreshold = 500;   // px required to show header
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      if (window.innerWidth < 768) {
+        if (currentScroll === 0) {
+          // Always show header at top of page
+          mainHeader.classList.remove('-translate-y-full');
+          bgHeader.classList.remove('-translate-y-full');
+        } else if (currentScroll > lastScrollTop) {
+          // Scrolling down
+          if (currentScroll - lastScrollTop > scrollDownThreshold) {
+            mainHeader.classList.add('-translate-y-full');
+            bgHeader.classList.add('-translate-y-full');
+            lastScrollDownPos = currentScroll;
+          }
+        } else if (currentScroll < lastScrollTop) {
+          // Scrolling up
+          if (lastScrollDownPos - currentScroll > scrollUpThreshold) {
+            mainHeader.classList.remove('-translate-y-full');
+            bgHeader.classList.remove('-translate-y-full');
+          }
+        }
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  })();
+
+  // On resize, reset visibility on md+ screens
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      mainHeader.classList.remove('-translate-y-full');
+      bgHeader.classList.remove('-translate-y-full');
+    }
+  });
+
+  // FORM: Save and load form input values with localStorage
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    if (!form) return;
+
+    const inputs = form.querySelectorAll("input, textarea");
+
+    inputs.forEach((input) => {
+      const saved = localStorage.getItem(input.name);
+      if (saved) input.value = saved;
+
+      input.addEventListener("input", () => {
+        localStorage.setItem(input.name, input.value);
+      });
+    });
+  });
+</script>
