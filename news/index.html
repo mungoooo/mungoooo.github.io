@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Mungo McLaggan
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="min-h-screen flex flex-col bg-black bg-[url(assets/images/backgrounds/background_50.png)] md:bg-[url(assets/images/backgrounds/backgroundXflip_25.png)]">
+    <header id="bgHeader" class="bg-black mask-to-t fixed h-[240px] sm:h-[180px] w-full flex transition-transform duration-300 ease-in-out full-hidden-headerbg full-index-headerbg"></header>
+    <header id="mainHeader" class="fixed h-[180px] sm:h-[128px] pt-[20px] pb-[20px] z-100 w-full flex justify-between transition-transform duration-300 ease-in-out font-style-2 full-header-width">
+      <div id="scrollToTop" class="transition-opacity duration-300 ease-in-out pl-[30px] h-full flex flex-col items-start justify-center md:opacity-100">
+        <a href="../about/">
+          <h1 class="font-[700] text-[35px] pb-[5px] tracking-widest text-nowrap">
+          MUNGO <span class="inline sm:hidden"><br></span> MCLAGGAN
+          </h1>
+        </a>
+        <h2 class="text-[20px] text-secondary mt-[-8px] sm:mt-[-12px] mb-[8px]">
+          COMPOSER
+        </h2>
+        <div class="button-group flex opacity-80 space-x-3">
+          <div class="button">
+            <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
+              <img src="../assets/icons/Instagram_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
+              <img src="../assets/icons/Spotify_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
+              <img src="../assets/icons/AppleMusic_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
+              <img src="../assets/icons/IMDb.png" class="h-[30px]">
+            </a>
+          </div>
+        </div>
+      </div>
+      <menu class="relative flex items-end justify-end text-[30px] pr-[20px] md:hidden w-full">
+        <button id="menuButton" class="text-button focus:outline-none z-50">
+          Menu
+        </button>
+      </menu>
+      <ul id="menuOverlay" 
+        class="opacity-0 pointer-events-none transition-opacity duration-300 md:hidden absolute left-0 pl-[10px] top-0 right-[130px] h-[180px] sm:h-[128px] bg-black w-full mask-to-t2 z-40 flex flex-col justify-center sm:justify-start sm:pt-[25px] gap-y-[15px] sm:gap-y-[0px]">
+        <li class="flex items-center justify-between text-[25px] pr-[4vw] sm:pb-[28px] sm:pr-[6vw] pl-[20px]">
+          <a href="../about/" class="text-button">About</a>
+          <span class="w-[2px] h-[30px] bg-white/30 mx-2"></span>
+          <a href="../work/" class="text-button">Work</a>
+          <span class="w-[2px] h-[30px] bg-white/30 mx-2"></span>
+          <a href="../news/" class="text-button selected">News</a>
+          <span class="w-[2px] h-[30px] bg-white/30 mx-2"></span>
+          <a href="../contact/" class="text-button">Contact</a>
+        </li>
+        <li class="button-group w-[156px] flex justify-start items-end ml-[20px] opacity-80 space-x-3">
+          <div class="button">
+            <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
+              <img src="../assets/icons/Instagram_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
+              <img src="../assets/icons/Spotify_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
+              <img src="../assets/icons/AppleMusic_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
+              <img src="../assets/icons/IMDb.png" class="h-[30px]">
+            </a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <nav class="invisible md:visible md:w-[150px] h-full mt-[180px] w-[250px] fixed pl-[20px] z-1000 font-style-2">
+      <ul class="grid grid-cols-1 space-y-9 text-[20px] font-bold tracking-widest">
+        <li class="flex justify-end">
+          <a href="../about/" class="text-button">About</a>
+        </li>
+        <li class="flex justify-end">
+          <a href="../work/" class="text-button">Work</a>
+        </li>
+        <li class="flex justify-end">
+          <a href="../news/" class="text-button selected">News</a>
+        </li>
+        <li class="flex justify-end">
+          <a href="../contact/" class="text-button">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex flex-col flex-grow mainminh pt-[200px] full-padding sm:pt-[132px] md:ml-[150px]">
+      <section class="w-full [word-spacing:0.1rem] leading-relaxed max-w-[1000px] mx-auto flex flex-col p-0 sm:p-12 overflow-y-auto text-secondary bg-black/30 mask-to-t2">
+        <div class="flex flex-col">
+         
+          <div class="flex flex-col mb-[100px]">
+            <h1 class="text-style-primary p-[24px] pt-0 pb-[12px] text-[30px] font-style-2"><span class="flex justify-start items-center">One Swallow Two premieres at Whistler Film Festival!</span><span class="text-secondary text-[25px] flex justify-start items-center">December 5th, 2024</span></h1>
+            <div class="grid">
+              <div class="flex flex-col p-[24px] md:pl-[24px] gap-y-[24px]">
+                <p>
+                  As part of a program showcasing the works of upcoming BC filmmakers, <a class="button4 italic" target="_blank" href="https://www.imdb.com/title/tt28080250/">One Swallow Two</a> had its world premiere today at <a href="https://www.whistlerfilmfestival.com/films/2024/one-swallow-two" target="_blank" class="button4">Whistler Film Festival</a>.
+                </p>
+                <p>
+                  The film, directed by Taryn Foster, tackles issues surrounding body image and binge-eating through the lens of fantasy horror.
+                </p>
+                <a href="https://www.imdb.com/title/tt28080250/" target="_blank"> <img class="button3 flex flex-col" src="../assets/images/embed/1s2.png"></a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="chrome" class="scroll-mt-[170px] flex flex-col">
+            <h1 class="text-style-primary p-[24px] pb-[12px] text-[30px] font-style-2"><span class="flex justify-start items-center">Chrome wins best Score at POV24!</span><span class="text-secondary text-[25px] flex justify-start items-center">September 29th, 2024</span></h1>
+              <div class="flex flex-col p-6 gap-6 md:gap-x-6 mb-[100px]">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <p class="md:hidden">
+                    After a busy weekend of film screenings, Mungo McLaggan was delighted to take home the award of best score for his work on the short film
+                    <span class="italic">Chrome</span> at this year's
+                    <a href="https://www.povfilmfest.com/" target="_blank" class="button4">Persistence of Vision Film Festival</a>.
+                  </p>
+                  <img src="../assets/images/embed/Chrome Poster_8.1.1_8.1.2.jpg" class="w-full h-auto self-center" />
+
+                  <div class="flex flex-col justify-between">
+                    <div class="space-y-[24px]">
+                      <p class="hidden md:block">
+                        After a busy weekend of film screenings, Mungo McLaggan was delighted to take home the award of best score for his work on the short film
+                        <span class="italic">Chrome</span> at this year's
+                        <a href="https://www.povfilmfest.com/" target="_blank" class="button4">Persistence of Vision Film Festival</a>.
+                      </p>
+                      <p>
+                        Being partially a dance film, it’s no surprise that music forms an integral part of <span class="italic">Chrome</span>. Mungo McLaggan’s score ranges all the way from bumping dance music to introspective solo piano. The whole soundtrack is <a href="../releases/chrome/" target="_blank" class="button4">out now</a> on all major streaming platforms.
+                      </p>
+                    </div>
+                    <img src="../assets/images/embed/DSC04939.JPG" class="w-full h-auto mt-6 hide"/>
+                  </div>
+                </div>
+
+                <img src="../assets/images/embed/DSC04939.JPG" class="w-full h-auto unhide"/>
+
+                <div class="space-y-6">
+                  <p>
+                    The whole <span class="italic">Chrome</span> team was thrilled when, later in the night, the film went on to win both best cinematography and best lead performer!
+                  </p>
+                </div>
+
+                <img src="../assets/images/embed/POV24_ChromeTeam.jpg" class="w-full h-auto mb-0"/>
+              </div>  
+          </div>
+
+          <div class="flex flex-col mb-[100px]">
+            <h1 class="text-style-primary p-[24px] pb-[12px] text-[30px] font-style-2"><span class="flex justify-start items-center">NEW RELEASE: Chrome OST</span><span class="text-secondary text-[25px] flex justify-start items-center">September 28th, 2024</span></h1>
+            <div class="grid p-[24px] md:grid-cols-2">
+              <a href="../releases/chrome/" target="_blank"><img class="button3 flex flex-col" src="../assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg"></a>
+              <p class="p-[24px] pr-0 pl-0 md:pt-0 md:pl-[24px]">The Original Motion Picture Soundtrack for <span class="italic">Chrome</span> is <a href="../releases/chrome/" target="_blank" class="button4">out now</a> on all major streaming services!</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col mb-[100px]">
+            <h1 class="text-style-primary p-[24px] pb-[12px] text-[30px] font-style-2"><span class="flex justify-start items-center"></span>NEW RELEASE: Euphony<span class="text-secondary text-[25px] flex justify-start items-center">August 9th, 2024</span></h1>
+            <div class="grid p-[24px] md:grid-cols-2">
+              <a href="../releases/euphony/" target="_blank"><img class="button3 flex flex-col" src="../assets/images/embed/Euphony_Final.png"></a>
+              <p class="p-[24px] pr-0 pl-0 md:pt-0 md:pl-[24px]">Mungo McLaggan's latest album <span class="italic">Euphony</span> is <a href="../releases/euphony/" target="_blank" class="button4">out now</a> on all major streaming services!</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <footer class="flex flex-col flex-grow min-h-[80px] w-full items-center justify-center space-y-2 opacity-65">
+      <div class="inline text-center justify-start text-3xl">
+        <h1 class="text-secondary text-[15px]">
+          Copyright © 2025 Mungo McLaggan
+        </h1>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+
+  function hideWork() {
+    const el = document.querySelector(".full-index-delay");
+    el.classList.add("hidden");
+    setTimeout(() => {
+      el.style.zIndex = "0"; // or -1 if safe
+    }, 500);
+  }
+
+  function showWork() {
+    const el = document.querySelector(".full-index-delay");
+    el.style.zIndex = "999";
+    requestAnimationFrame(() => {
+      el.classList.remove("hidden");
+    });
+  }
+
+  const menuButton = document.getElementById('menuButton');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const scrollToTop = document.getElementById('scrollToTop');
+  const mainHeader = document.querySelectorAll('header')[1]; // Your main header
+  const bgHeader = document.getElementById('bgHeader'); // Black background header
+
+  let lastScrollTop = 0;
+
+  function toggleMenu() {
+    menuOverlay.classList.toggle('opacity-0');
+    menuOverlay.classList.toggle('pointer-events-none');
+    scrollToTop.classList.toggle('opacity-0'); // Also toggle scrollToTop
+  }
+
+  function closeMenu() {
+    menuOverlay.classList.add('opacity-0');
+    menuOverlay.classList.add('pointer-events-none');
+    scrollToTop.classList.remove('opacity-0'); // Ensure it's visible again
+  }
+
+  // Menu button click
+  menuButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
+  });
+
+  // Prevent clicks inside the menu from closing it
+  menuOverlay.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  // Close menu when clicking anywhere else
+  document.addEventListener('click', () => {
+    closeMenu();
+  });
+
+  // Smooth scroll to top
+  scrollToTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  (() => {
+    let lastScrollTop = 0;
+    let lastScrollDownPos = 0;
+
+    const scrollDownThreshold = 20; // px required to hide header
+    const scrollUpThreshold = 500;   // px required to show header
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      if (window.innerWidth < 768) {
+        if (currentScroll === 0) {
+          // Always show header at top of page
+          mainHeader.classList.remove('-translate-y-full');
+          bgHeader.classList.remove('-translate-y-full');
+        } else if (currentScroll > lastScrollTop) {
+          // Scrolling down
+          if (currentScroll - lastScrollTop > scrollDownThreshold) {
+            mainHeader.classList.add('-translate-y-full');
+            bgHeader.classList.add('-translate-y-full');
+            lastScrollDownPos = currentScroll;
+          }
+        } else if (currentScroll < lastScrollTop) {
+          // Scrolling up
+          if (lastScrollDownPos - currentScroll > scrollUpThreshold) {
+            mainHeader.classList.remove('-translate-y-full');
+            bgHeader.classList.remove('-translate-y-full');
+          }
+        }
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  })();
+
+  // On resize, reset visibility on md+ screens
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      mainHeader.classList.remove('-translate-y-full');
+      bgHeader.classList.remove('-translate-y-full');
+    }
+  });
+
+  // FORM: Save and load form input values with localStorage
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    if (!form) return;
+
+    const inputs = form.querySelectorAll("input, textarea");
+
+    inputs.forEach((input) => {
+      const saved = localStorage.getItem(input.name);
+      if (saved) input.value = saved;
+
+      input.addEventListener("input", () => {
+        localStorage.setItem(input.name, input.value);
+      });
+    });
+  });
+</script>
