@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Mungo McLaggan
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-black">
+    <div class="h-screen bg-cover bg-center flex flex-col index_background">
+      <header class="bg-black mask-to-t fixed h-[240px] sm:h-[180px] z-100 w-full flex"></header>
+      <header class="fixed h-[180px] sm:h-[128px] pt-[20px] pb-[20px] z-100 w-full flex justify-between font-style-2">
+        <div id="scrollToTop" class="transition-opacity duration-300 ease-in-out pl-[30px] h-full flex flex-col items-start justify-center md:opacity-100">
+            <h1 class="font-[700] text-[35px] pb-[5px] tracking-widest text-nowrap">
+            MUNGO <span class="inline sm:hidden"><br></span> MCLAGGAN
+            </h1>
+          <h2 class="text-[20px] text-secondary mt-[-8px] sm:mt-[-12px] mb-[8px]">
+            COMPOSER
+          </h2>
+          <div class="button-group flex opacity-80 space-x-3">
+            <div class="button">
+              <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
+                <img src="assets/icons/Instagram_white.png" class="h-[30px]">
+              </a>
+            </div>
+            <div class="button">
+              <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
+                <img src="assets/icons/Spotify_white.png" class="h-[30px]">
+              </a>
+            </div>
+            <div class="button">
+              <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
+                <img src="assets/icons/AppleMusic_white.png" class="h-[30px]">
+              </a>
+            </div>
+            <div class="button">
+              <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
+                <img src="assets/icons/IMDb.png" class="h-[30px]">
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </header>
+      <main class="flex flex-col flex-grow mainminh pt-[180px] sm:pt-[132px]">
+        <section class="mainminh4 flex items-center justify-center">
+          <div class="flex items-center justify-center">
+            <a href="pages/about/"><button class="text-button text-style-primary text-[50px] text-center font-style-2">ENTER</button></a>
+          </div>
+          <div class="absolute items-center justify-center blur-md">
+            <a href="pages/about/"><button class="hover:cursor-pointer text-style-primary text-[50px] text-center font-style-2 hover:opacity-30 transition-opacity duration-500 ">ENTER</button></a>
+          </div>
+        </section>
+      </main>
+      <footer class=" flex flex-col flex-grow min-h-[80px] w-full items-center justify-center space-y-2 opacity-65">
+        <div class="inline text-center justify-start text-3xl">
+          <h1 class="text-secondary text-[15px]">
+            Copyright © 2025 Mungo McLaggan
+          </h1>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script>
+  const menuButton = document.getElementById('menuButton');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const scrollToTop = document.getElementById('scrollToTop');
+
+  function toggleMenu() {
+    menuOverlay.classList.toggle('opacity-0');
+    menuOverlay.classList.toggle('pointer-events-none');
+    scrollToTop.classList.toggle('opacity-0'); // Also toggle scrollToTop
+  }
+
+  function closeMenu() {
+    menuOverlay.classList.add('opacity-0');
+    menuOverlay.classList.add('pointer-events-none');
+    scrollToTop.classList.remove('opacity-0'); // Ensure it's visible again
+  }
+
+  // Menu button click
+  menuButton.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent click from bubbling
+    toggleMenu();
+  });
+
+  // Prevent clicks inside the menu from closing it
+  menuOverlay.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  // Close menu when clicking anywhere else
+  document.addEventListener('click', () => {
+    closeMenu();
+  });
+
+  // Smooth scroll to top on #scrollToTop click
+  scrollToTop.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  // FORM: Save and load input data using localStorage
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    if (!form) return; // Prevent error if form is not on the page
+
+    const inputs = form.querySelectorAll("input, textarea");
+
+    // Load saved values
+    inputs.forEach((input) => {
+      const saved = localStorage.getItem(input.name);
+      if (saved) input.value = saved;
+    });
+
+    // Save on input
+    inputs.forEach((input) => {
+      input.addEventListener("input", () => {
+        localStorage.setItem(input.name, input.value);
+      });
+    });
+  });
+</script>
