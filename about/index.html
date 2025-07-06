@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <body class="min-h-screen flex flex-col bg-black bg-[url(assets/images/backgrounds/background_50.png)] md:bg-[url(assets/images/backgrounds/backgroundXflip_25.png)]">
+  <body class="min-h-screen flex flex-col bg-gray-900 bg-[url(assets/images/backgrounds/background_50.png)] md:bg-gray-950">
     <header id="bgHeader" class="bg-black mask-to-t fixed h-[240px] sm:h-[180px] w-full flex transition-transform duration-300 ease-in-out full-hidden-headerbg full-index-headerbg"></header>
     <header id="mainHeader" class="fixed h-[180px] sm:h-[128px] pt-[20px] pb-[20px] z-100 w-full flex justify-between transition-transform duration-300 ease-in-out font-style-2 full-header-width">
       <div id="scrollToTop" class="transition-opacity duration-300 ease-in-out pl-[30px] h-full flex flex-col items-start justify-center md:opacity-100">
@@ -30,6 +30,11 @@
           <div class="button">
             <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
               <img src="../assets/icons/Instagram_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
+              <img src="../assets/icons/Youtube.png" class="h-[30px]">
             </a>
           </div>
           <div class="button">
@@ -65,10 +70,15 @@
           <span class="w-[2px] h-[30px] bg-white/30 mx-2"></span>
           <a href="../contact/" class="text-button">Contact</a>
         </li>
-        <li class="button-group w-[156px] flex justify-start items-end ml-[20px] opacity-80 space-x-3">
+        <li class="button-group flex justify-start items-end w-[195px] ml-[20px] opacity-80 space-x-3">
           <div class="button">
             <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
               <img src="../assets/icons/Instagram_white.png" class="h-[30px]">
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
+              <img src="../assets/icons/Youtube.png" class="h-[30px]">
             </a>
           </div>
           <div class="button">
@@ -106,9 +116,9 @@
       </ul>
     </nav>
     <main class="flex flex-col flex-grow mainminh pt-[200px] sm:pt-[132px] md:ml-[150px] full-padding">
-      <section class="w-full [word-spacing:0.1rem] leading-relaxed max-w-[1000px] mx-auto flex flex-col space-y-8 p-6 sm:p-12 overflow-y-auto text-secondary bg-black/30 mask-to-t2">
-        <div class="flex flex-col md:grid md:grid-cols-2">
-          <img src="../assets/images/embed/ig_pfp.jpg">
+      <section class="w-full [word-spacing:0.1rem] leading-relaxed max-w-[1000px] mx-auto flex flex-col space-y-8 p-6 sm:p-12 overflow-y-auto text-secondary transition-colors duration-500 bg-[rgba(0,0,0,var(--bg-opacity))] custom-bg-opacity mask-to-t2">
+        <div class="flex flex-col md:grid md:grid-cols-2 pt-[20px]"> <!--Remeber to take off the pt-[30px] if adding a new item on top-->
+          <img src="../assets/images/embed/mungo_5.1.5.png">
           <p class="text-[clamp(1.5rem,4vw,3rem)] md:text-[clamp(1.5rem,3vw,2rem)] pt-3 md:pt-0 md:pl-6 self-end text-style-primary font-style-2">
           Mungo McLaggan is a British-Canadian <span class="text-style-primary">film composer</span> based in Vancouver, Canada.
           </p>
@@ -142,13 +152,13 @@
 
           <span class="w-full h-[2px] bg-white/30"></span>
           
-          <div class="pr-[24px] pl-[24px] mb-[24px] font-style-2">
-            <h1 class="text-style-primary text-center text-[30px] mb-[20px] font-style-2">-- RECENT NEWS --</h1>
+          <div class="pr-[24px] pl-[24px] xl:mb-[124px] font-style-2">
+            <h1 class="text-style-primary text-center text-[30px] mb-[20px] font-style-2">RECENT NEWS:</h1>
             <div class="flex flex-col">
               <h1 class="text-style-primary text-[30px] mb-[30px]"><span class="flex justify-start items-center">One Swallow Two premieres at Whistler Film Festival!</span><span class="text-secondary text-[25px] flex justify-start items-center">December 5th, 2024</span></h1>
               <a href="../news/" target="_blank"> <img class="button3" src="../assets/images/embed/1s2.png"></a>
             </div>
-            <h1 class="text-secondary text-center text-[20px] mt-[24px] font-[Wittgenstein]">(more on the <a href="../news/" class="font-light button4">news</a> page)</h1>
+            <h1 class="text-secondary text-center text-[20px] mt-[36px] font-[Wittgenstein]">(more on the <a href="../news/" class="font-light button4">news</a> page)</h1>
           </div>
 
         </div>
@@ -157,7 +167,7 @@
     </main>
     <footer class=" flex flex-col flex-grow min-h-[80px] w-full items-center justify-center space-y-2 opacity-65">
       <div class="inline text-center justify-start text-3xl">
-        <h1 class="text-secondary text-[15px]">
+        <h1 class="text-secondary text-[15px] md:pl-[150px]">
           Copyright © 2025 Mungo McLaggan
         </h1>
       </div>
