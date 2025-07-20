@@ -1,6 +1,4 @@
-<main
-  class="mainminh flex flex-grow flex-col bg-[url(assets/images/backgrounds/backgroundXflip_50.png)] bg-no-repeat pt-[200px] sm:pt-[132px] md:ml-[150px]"
->
+<main class="mainminh flex flex-grow flex-col pt-[200px] sm:pt-[132px] md:ml-[150px]">
   <section
     class="text-secondary mx-auto flex w-full max-w-[1000px] flex-col space-y-3 overflow-y-auto p-6 leading-relaxed [word-spacing:0.1rem] sm:p-12"
   >

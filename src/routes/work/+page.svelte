@@ -1,6 +1,4 @@
-<div
-  class="no-full-padding flex flex-col bg-black bg-[url(assets/images/backgrounds/background_50.png)] bg-no-repeat md:bg-[url(assets/images/backgrounds/backgroundXflip_10.png)]"
->
+<div class="no-full-padding flex flex-col">
   <div class="relative flex flex-grow flex-col">
     <main
       class="mainminh full-padding2 flex flex-grow flex-col pt-[200px] sm:pt-[132px] md:ml-[150px]"

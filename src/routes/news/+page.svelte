@@ -1,6 +1,4 @@
-<section
-  class="flex flex-col bg-black bg-[url(assets/images/backgrounds/background_50.png)] md:bg-[url(assets/images/backgrounds/backgroundXflip_25.png)]"
->
+<section class="flex flex-col">
   <div class="mainminh full-padding flex flex-grow flex-col pt-[200px] sm:pt-[132px] md:ml-[150px]">
     <div
       class="text-secondary mask-to-t2 mx-auto flex w-full max-w-[1000px] flex-col overflow-y-auto bg-black/30 p-0 leading-relaxed [word-spacing:0.1rem] sm:p-12"

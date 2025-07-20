@@ -1,6 +1,4 @@
-<div
-  class="no-full-padding flex min-h-screen flex-col bg-black bg-[url(assets/images/backgrounds/background_50.png)] md:bg-[url(assets/images/backgrounds/backgroundXflip_25.png)]"
->
+<div class="no-full-padding flex min-h-screen flex-col">
   <main class="mainminh flex flex-grow flex-col pt-[70px] sm:pt-[50px] md:ml-[150px]">
     <section
       class="text-secondary mx-auto flex w-[90%] max-w-[1000px] flex-col overflow-y-auto p-6 leading-relaxed [word-spacing:0.1rem] sm:w-[70%] sm:p-12 lg:w-[50%] xl:w-[40%] 2xl:w-[30%]"

@@ -142,162 +142,136 @@
   }
 </script>
 
-<header
-  bind:this={bgHeader}
-  id="bgHeader"
-  class="mask-to-t full-hidden-headerbg full-index-headerbg fixed flex h-[240px] w-full bg-black transition-transform duration-300 ease-in-out sm:h-[180px]"
-></header>
+<svelte:head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+</svelte:head>
 
-<header
-  bind:this={mainHeader}
-  id="mainHeader"
-  class="font-style-2 full-header-width fixed z-100 flex h-[180px] w-full justify-between pt-[20px] pb-[20px] transition-transform duration-300 ease-in-out sm:h-[128px]"
+<div
+  class={`flex min-h-screen flex-col bg-black bg-fixed bg-no-repeat ${
+    page.url.pathname === '/'
+      ? "fade-in-page bg-[url('assets/images/backgrounds/background.jpg')] bg-contain"
+      : page.url.pathname === '/about'
+        ? "bg-[url('assets/images/backgrounds/background_50.png')]"
+        : page.url.pathname.startsWith('/releases/')
+          ? "bg-[url('assets/images/backgrounds/background_50.png')] md:bg-[url('assets/images/backgrounds/backgroundXflip_25.png')]"
+          : page.url.pathname === '/news'
+            ? "bg-[url('assets/images/backgrounds/background_50.png')] md:bg-[url('assets/images/backgrounds/backgroundXflip_25.png')]"
+            : page.url.pathname === '/work'
+              ? "bg-[url('assets/images/backgrounds/background_50.png')] md:bg-[url('assets/images/backgrounds/backgroundXflip_10.png')]"
+              : page.url.pathname === '/contact'
+                ? "bg-[url('assets/images/backgrounds/backgroundXflip_50.png')]"
+                : "bg-[url('assets/images/backgrounds/background_50.png')]"
+  }`}
 >
-  <div
-    bind:this={scrollToTop}
-    id="scrollToTop"
-    class="flex h-full flex-col items-start justify-center pl-[30px] transition-opacity duration-300 ease-in-out md:opacity-100"
-    role="button"
-    tabindex="0"
-    onclick={handleScrollToTop}
-    onkeydown={(e) => e.key === 'Enter' && handleScrollToTop()}
+  <header
+    bind:this={bgHeader}
+    id="bgHeader"
+    class="mask-to-t full-hidden-headerbg full-index-headerbg fixed flex h-[240px] w-full bg-black transition-transform duration-300 ease-in-out sm:h-[180px]"
+  ></header>
+
+  <header
+    bind:this={mainHeader}
+    id="mainHeader"
+    class="font-style-2 full-header-width fixed z-100 flex h-[180px] w-full justify-between pt-[20px] pb-[20px] transition-transform duration-300 ease-in-out sm:h-[128px]"
   >
-    <a href={page.url.pathname === '/' ? '/' : '/about'}>
-      <h1 class="pb-[5px] text-[35px] font-[700] tracking-widest text-nowrap">
-        MUNGO
-        <span class="inline sm:hidden"><br /></span>
-        MCLAGGAN
-      </h1>
-    </a>
-    <h2 class="text-secondary mt-[-8px] mb-[8px] text-[20px] sm:mt-[-12px]">COMPOSER</h2>
-    <div class="button-group flex space-x-3 opacity-80">
-      <div class="button">
-        <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
-          <img src="/assets/icons/Instagram_white.png" class="h-[30px]" alt="Instagram" />
-        </a>
-      </div>
-      <div class="button">
-        <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
-          <img src="/assets/icons/Youtube.png" class="h-[30px]" alt="YouTube" />
-        </a>
-      </div>
-      <div class="button">
-        <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
-          <img src="/assets/icons/Spotify_white.png" class="h-[30px]" alt="Spotify" />
-        </a>
-      </div>
-      <div class="button">
-        <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
-          <img src="/assets/icons/AppleMusic_white.png" class="h-[30px]" alt="Apple Music" />
-        </a>
-      </div>
-      <div class="button">
-        <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
-          <img src="/assets/icons/IMDb.png" class="h-[30px]" alt="IMDb" />
-        </a>
+    <div
+      bind:this={scrollToTop}
+      id="scrollToTop"
+      class="flex h-full flex-col items-start justify-center pl-[30px] transition-opacity duration-300 ease-in-out md:opacity-100"
+      role="button"
+      tabindex="0"
+      onclick={handleScrollToTop}
+      onkeydown={(e) => e.key === 'Enter' && handleScrollToTop()}
+    >
+      <a href={page.url.pathname === '/' ? '/' : '/about'}>
+        <h1 class="pb-[5px] text-[35px] font-[700] tracking-widest text-nowrap">
+          MUNGO
+          <span class="inline sm:hidden"><br /></span>
+          MCLAGGAN
+        </h1>
+      </a>
+      <h2 class="text-secondary mt-[-8px] mb-[8px] text-[20px] sm:mt-[-12px]">COMPOSER</h2>
+      <div class="button-group flex space-x-3 opacity-80">
+        <div class="button">
+          <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
+            <img src="/assets/icons/Instagram_white.png" class="h-[30px]" alt="Instagram" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
+            <img src="/assets/icons/Youtube.png" class="h-[30px]" alt="YouTube" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
+            <img src="/assets/icons/Spotify_white.png" class="h-[30px]" alt="Spotify" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
+            <img src="/assets/icons/AppleMusic_white.png" class="h-[30px]" alt="Apple Music" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
+            <img src="/assets/icons/IMDb.png" class="h-[30px]" alt="IMDb" />
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  {#if page.url.pathname !== '/'}
-    <menu class="relative flex w-full items-end justify-end pr-[20px] text-[30px] md:hidden">
-      <button
-        id="menuButton"
-        class="text-button z-50 focus:outline-none"
-        onclick={handleMenuButtonClick}
-      >
-        Menu
-      </button>
-    </menu>
-  {/if}
-
-  <!-- svelte-ignore a11y_click_events_have_key_events -->
-  <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
-  <ul
-    bind:this={menuOverlay}
-    id="menuOverlay"
-    class="mask-to-t2 absolute top-0 right-[130px] left-0 z-40 flex h-[180px] w-full flex-col justify-center gap-y-[15px] bg-black pl-[10px] transition-opacity duration-300 sm:h-[128px] sm:justify-start sm:gap-y-[0px] sm:pt-[25px] md:hidden"
-    class:opacity-0={!isMenuOpen}
-    class:pointer-events-none={!isMenuOpen}
-    onclick={handleMenuClick}
-  >
-    <li
-      class="mt-[50px] mb-[37px] flex items-center justify-between pr-[4vw] pl-[20px] text-[25px] sm:mt-[0px] sm:mb-[0px] sm:pr-[6vw] sm:pb-[28px]"
-    >
-      <a href="/about/" class={`text-button ${page.url.pathname === '/about' ? 'selected' : ''}`}>
-        About
-      </a>
-      <span class="mx-2 h-[30px] w-[2px] bg-white/30"></span>
-      <a href="/work/" class={`text-button ${page.url.pathname === '/work' ? 'selected' : ''}`}>
-        Work
-      </a>
-      <span class="mx-2 h-[30px] w-[2px] bg-white/30"></span>
-      <a href="/news/" class={`text-button ${page.url.pathname === '/news' ? 'selected' : ''}`}>
-        News
-      </a>
-      <span class="mx-2 h-[30px] w-[2px] bg-white/30"></span>
-      <a
-        href="/contact/"
-        class={`text-button ${page.url.pathname === '/contact' ? 'selected' : ''}`}
-      >
-        Contact
-      </a>
-    </li>
-    <li class="button-group ml-[20px] flex w-[195px] items-end justify-start space-x-3 opacity-80">
-      <div class="button">
-        <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
-          <img src="../assets/icons/Instagram_white.png" class="h-[30px]" alt="Instagram" />
-        </a>
-      </div>
-      <div class="button">
-        <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
-          <img src="../assets/icons/Youtube.png" class="h-[30px]" alt="YouTube" />
-        </a>
-      </div>
-      <div class="button">
-        <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
-          <img src="../assets/icons/Spotify_white.png" class="h-[30px]" alt="Spotify" />
-        </a>
-      </div>
-      <div class="button">
-        <a
-          aria-label="apple music artist"
-          href="https://music.apple.com/artist/mungo-mclaggan/1611932686"
-          target="_blank"
+    {#if page.url.pathname !== '/'}
+      <menu class="relative flex w-full items-end justify-end pr-[20px] text-[30px] md:hidden">
+        <button
+          id="menuButton"
+          class="text-button z-50 focus:outline-none"
+          onclick={handleMenuButtonClick}
         >
-          <img alt="apple music icon" src="../assets/icons/AppleMusic_white.png" class="h-[30px]" />
-        </a>
-      </div>
-      <div class="button">
-        <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
-          <img src="../assets/icons/IMDb.png" class="h-[30px]" alt="IMDb" />
-        </a>
-      </div>
-    </li>
-  </ul>
-</header>
+          Menu
+        </button>
+      </menu>
+    {/if}
 
-{#if page.url.pathname !== '/'}
-  <nav
-    class="font-style-2 invisible fixed z-1000 mt-[180px] h-full w-[250px] pl-[20px] md:visible md:w-[150px]"
-  >
-    <ul class="grid grid-cols-1 space-y-9 text-[20px] font-bold tracking-widest">
-      <li class="flex justify-end">
+    <!-- svelte-ignore a11y_click_events_have_key_events -->
+    <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+    <ul
+      bind:this={menuOverlay}
+      id="menuOverlay"
+      class="mask-to-t2 absolute top-0 right-[130px] left-0 z-40 flex h-[180px] w-full flex-col justify-center gap-y-[15px] bg-black pl-[10px] transition-opacity duration-300 sm:h-[128px] sm:justify-start sm:gap-y-[0px] sm:pt-[25px] md:hidden"
+      class:opacity-0={!isMenuOpen}
+      class:pointer-events-none={!isMenuOpen}
+      onclick={handleMenuClick}
+    >
+      <li
+        class="mt-[50px] mb-[37px] flex items-center justify-between pr-[4vw] pl-[20px] text-[25px] sm:mt-[0px] sm:mb-[0px] sm:pr-[6vw] sm:pb-[28px]"
+      >
         <a href="/about/" class={`text-button ${page.url.pathname === '/about' ? 'selected' : ''}`}>
           About
         </a>
-      </li>
-      <li class="flex justify-end">
+        <span class="mx-2 h-[30px] w-[2px] bg-white/30"></span>
         <a href="/work/" class={`text-button ${page.url.pathname === '/work' ? 'selected' : ''}`}>
           Work
         </a>
-      </li>
-      <li class="flex justify-end">
+        <span class="mx-2 h-[30px] w-[2px] bg-white/30"></span>
         <a href="/news/" class={`text-button ${page.url.pathname === '/news' ? 'selected' : ''}`}>
           News
         </a>
-      </li>
-      <li class="flex justify-end">
+        <span class="mx-2 h-[30px] w-[2px] bg-white/30"></span>
         <a
           href="/contact/"
           class={`text-button ${page.url.pathname === '/contact' ? 'selected' : ''}`}
@@ -305,23 +279,87 @@
           Contact
         </a>
       </li>
+      <li
+        class="button-group ml-[20px] flex w-[195px] items-end justify-start space-x-3 opacity-80"
+      >
+        <div class="button">
+          <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
+            <img src="../assets/icons/Instagram_white.png" class="h-[30px]" alt="Instagram" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
+            <img src="../assets/icons/Youtube.png" class="h-[30px]" alt="YouTube" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
+            <img src="../assets/icons/Spotify_white.png" class="h-[30px]" alt="Spotify" />
+          </a>
+        </div>
+        <div class="button">
+          <a
+            aria-label="apple music artist"
+            href="https://music.apple.com/artist/mungo-mclaggan/1611932686"
+            target="_blank"
+          >
+            <img
+              alt="apple music icon"
+              src="../assets/icons/AppleMusic_white.png"
+              class="h-[30px]"
+            />
+          </a>
+        </div>
+        <div class="button">
+          <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
+            <img src="../assets/icons/IMDb.png" class="h-[30px]" alt="IMDb" />
+          </a>
+        </div>
+      </li>
     </ul>
-  </nav>
-{/if}
+  </header>
 
-<div class="bg-black">
-  <div
-    class={`${
-      page.url.pathname === '/' ? 'index_background' : ''
-    } flex h-screen flex-col bg-cover bg-center`}
-  >
-    {@render children()}
-    <footer
-      class={`flex min-h-[80px] w-full flex-grow flex-col items-center justify-center space-y-2 bg-black opacity-65 ${page.url.pathname !== '/' ? 'md:pl-[150px]' : ''}`}
+  {#if page.url.pathname !== '/'}
+    <nav
+      class="font-style-2 invisible fixed z-1000 mt-[180px] h-full w-[250px] pl-[20px] md:visible md:w-[150px]"
     >
-      <div class="inline justify-start text-center text-3xl">
-        <h1 class="text-secondary text-[15px]">Copyright © 2025 Mungo McLaggan</h1>
-      </div>
-    </footer>
-  </div>
+      <ul class="grid grid-cols-1 space-y-9 text-[20px] font-bold tracking-widest">
+        <li class="flex justify-end">
+          <a
+            href="/about/"
+            class={`text-button ${page.url.pathname === '/about' ? 'selected' : ''}`}
+          >
+            About
+          </a>
+        </li>
+        <li class="flex justify-end">
+          <a href="/work/" class={`text-button ${page.url.pathname === '/work' ? 'selected' : ''}`}>
+            Work
+          </a>
+        </li>
+        <li class="flex justify-end">
+          <a href="/news/" class={`text-button ${page.url.pathname === '/news' ? 'selected' : ''}`}>
+            News
+          </a>
+        </li>
+        <li class="flex justify-end">
+          <a
+            href="/contact/"
+            class={`text-button ${page.url.pathname === '/contact' ? 'selected' : ''}`}
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  {/if}
+
+  {@render children()}
+  <footer
+    class={`flex min-h-[80px] w-full flex-grow flex-col items-center justify-center space-y-2 opacity-65 ${page.url.pathname !== '/' ? 'md:pl-[150px]' : ''}`}
+  >
+    <div class="inline justify-start text-center text-3xl">
+      <h1 class="text-secondary text-[15px]">Copyright © 2025 Mungo McLaggan</h1>
+    </div>
+  </footer>
 </div>

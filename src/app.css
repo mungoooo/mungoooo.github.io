@@ -162,22 +162,6 @@
     }
 }
 
-.index_background {
-    background-image: url(assets/images/backgrounds/background.jpg);
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
-}
-
-.work_background {
-    background-image: url(assets/images/backgrounds/backgroundXflip_10.png);
-}
-
-.news_background {
-    background-image: url(assets/images/backgrounds/backgroundXflip_25.png);
-}
-
-
-
 @keyframes fadeIn {
     to {
         opacity: 1;
@@ -234,11 +218,8 @@
 
 body {
     font-family: wittgenstein, 'Times New Roman', Times, serif;
-    color: rgb(255, 255, 255);
-    background-attachment: fixed;
-    background-repeat: no-repeat; /* Prevent tiling */
-    /*background-size: auto;
-  background-position: center;*/
+    color: theme(--color-white);
+    background-color: theme(--color-black);
 }
 
 .height {
@@ -427,4 +408,19 @@ body {
     border-radius: 3px;
     caret-color: rgb(190, 190, 190);
     outline-color: rgb(190, 190, 190);
+}
+
+/* Fade-in animation for index page */
+.fade-in-page {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
