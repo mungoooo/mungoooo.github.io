@@ -1,0 +1,431 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-secondary: rgb(190, 190, 190);
+    --color-primary: rgb(250, 250, 250);
+}
+
+@utility mask-to-t {
+    mask: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.6) 18%,
+        rgba(0, 0, 0, 1) 25%
+    );
+}
+
+@utility mask-to-t2 {
+    mask: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.6) 2%,
+        rgba(0, 0, 0, 1) 4%
+    );
+}
+
+@utility mask-to-b {
+    mask: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 1%,
+        rgba(0, 0, 0, 0.6) 18%,
+        rgba(0, 0, 0, 1) 25%
+    );
+}
+
+@utility text-style-primary {
+    color: rgb(250, 250, 250);
+    font-weight: 700;
+}
+
+@utility font-style-2 {
+    font-family: 'Roboto Condensed';
+}
+
+/* {
+  outline: 1px solid rgb(255, 0, 0);
+} */
+
+.custom-bg-opacity {
+    --bg-opacity: 0.1;
+}
+
+@media (min-width: 1024px) {
+    /* lg */
+    .custom-bg-opacity {
+        --bg-opacity: 0.5;
+    }
+}
+
+@media (min-width: 1536px) {
+    /* 2xl */
+    .custom-bg-opacity {
+        --bg-opacity: 0.65;
+    }
+}
+
+.full-hidden-headerbg {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+@media (min-width: 1600px) {
+    .full-hidden-headerbg {
+        opacity: 0;
+    }
+}
+
+.full-hidden-headerbg-work {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+@media (min-width: 2400px) {
+    .full-hidden-headerbg-work {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1600px) {
+    .full-header-width {
+        width: 380px;
+    }
+}
+
+@media (min-width: 2400px) {
+    .full-header-width-work {
+        width: 380px;
+    }
+}
+
+.full-index-headerbg {
+    z-index: 100;
+}
+
+@media (min-width: 1600px) {
+    .full-index-headerbg {
+        z-index: -1000;
+    }
+}
+
+.full-index-headerbg-work {
+    z-index: 100;
+}
+
+@media (min-width: 2400px) {
+    .full-index-headerbg-work {
+        z-index: -1000;
+    }
+}
+
+@media (min-width: 1600px) {
+    .full-padding {
+        padding-top: 0px;
+    }
+}
+
+@media (min-width: 1600px) {
+    body:not(.no-full-padding) main section {
+        margin-top: -200px;
+        padding-top: 380px;
+    }
+}
+
+@media (min-width: 2400px) {
+    .full-padding2 {
+        padding-top: 0px;
+    }
+}
+
+@media (min-width: 2400px) {
+    .full-work-padding {
+        padding: 120px;
+        padding-top: 180px;
+    }
+}
+
+@media (max-width: 340px) {
+    .xs-text-size1 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 340px) {
+    .xs-text-size2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 340px) {
+    .xs-text-size3 {
+        font-size: 27px;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.flicker {
+    animation: flicker 1s infinite;
+    opacity: 1;
+}
+
+.flicker:hover {
+    animation: none;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+    }
+    5% {
+        opacity: 0.7;
+    }
+    10% {
+        opacity: 0.9;
+    }
+    15% {
+        opacity: 0.6;
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0.6;
+    }
+    40% {
+        opacity: 0.85;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.6;
+    }
+    85% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: wittgenstein, 'Times New Roman', Times, serif;
+    color: theme(--color-white);
+    background-color: theme(--color-black);
+}
+
+.height {
+    height: 100vh;
+}
+
+.mainminh {
+    min-height: calc(100vh - 130px);
+}
+
+.mainminh-chrm {
+    min-height: calc(100vh - 248px);
+}
+
+@media (min-width: 640px) {
+    .mainminh-chrm {
+        min-height: calc(100vh - 200px);
+    }
+}
+
+.mainminh-vr {
+    min-height: calc(100vh - 48px);
+}
+
+@media (min-width: 640px) {
+    .mainminh-vr {
+        min-height: calc(100vh - 200px);
+    }
+}
+
+.mainminh-poster {
+    min-height: 210px;
+    min-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .mainminh-poster {
+        max-height: calc(100vh - 200px);
+    }
+}
+
+.mainminh4 {
+    min-height: calc(100vh - 260px);
+}
+
+@media (min-width: 640px) {
+    .mainminh4 {
+        min-height: calc(100vh - 212px);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .hide {
+        display: block;
+    }
+}
+
+.unhide {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .unhide {
+        display: block;
+    }
+}
+
+.mainnimwidth {
+    min-width: calc(100vw - 250px);
+}
+
+.mainminwidth2 {
+    max-width: calc(100vw - 500px);
+}
+
+::selection {
+    background-color: rgb(243 243 243);
+    color: black;
+}
+
+.button-group .button {
+    transition: opacity 0.2s ease;
+}
+
+/* When any button is hovered */
+.button-group:hover .button {
+    opacity: 0.5; /* Dim all */
+}
+
+/* Except the one being hovered */
+.button-group .button:hover {
+    opacity: 1; /* Keep hovered one full */
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button2 {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.15s;
+}
+
+.button2:hover {
+    opacity: 0.5;
+}
+
+.button3 {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.15s;
+}
+
+.button3:hover {
+    opacity: 0.7;
+}
+
+.button4 {
+    font-weight: 700;
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.15s;
+}
+
+.button4:hover {
+    color: rgb(190, 190, 190);
+}
+
+.button img {
+    transition: all 0.2s ease;
+}
+
+/*.button:hover img {
+  scale: 1.03;
+}*/
+
+.text-button {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.text-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
+}
+
+.text-button:hover::after {
+    opacity: 1;
+}
+
+.selected {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.selected::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    opacity: 1;
+    transition: opacity 0.15s ease-in;
+}
+
+.form-control {
+    background: #131313;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    caret-color: rgb(190, 190, 190);
+    outline-color: rgb(190, 190, 190);
+}
+
+/* Fade-in animation for index page */
+.fade-in-page {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.vds-title-text {
+    font-family: 'Roboto Condensed';
+}
