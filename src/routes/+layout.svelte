@@ -170,18 +170,18 @@
 <div
   class={`flex min-h-screen flex-col bg-black bg-fixed bg-no-repeat ${
     page.url.pathname === '/'
-      ? "fade-in-page bg-[url('assets/images/backgrounds/background.jpg')] bg-contain"
+      ? "fade-in-page bg-[url('/assets/images/backgrounds/background.jpg')] bg-contain"
       : page.url.pathname === '/about'
-        ? "bg-[url('assets/images/backgrounds/background_50.png')]"
+        ? "bg-[url('/assets/images/backgrounds/background_50.png')]"
         : page.url.pathname.startsWith('/releases/')
-          ? "bg-[url('assets/images/backgrounds/background_50.png')] md:bg-[url('assets/images/backgrounds/backgroundXflip_25.png')]"
+          ? "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_25.png')]"
           : page.url.pathname === '/news'
-            ? "bg-[url('assets/images/backgrounds/background_50.png')] md:bg-[url('assets/images/backgrounds/backgroundXflip_25.png')]"
+            ? "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_25.png')]"
             : page.url.pathname === '/work'
-              ? "bg-[url('assets/images/backgrounds/background_50.png')] md:bg-[url('assets/images/backgrounds/backgroundXflip_10.png')]"
+              ? "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_10.png')]"
               : page.url.pathname === '/contact'
-                ? "bg-[url('assets/images/backgrounds/backgroundXflip_50.png')]"
-                : "bg-[url('assets/images/backgrounds/background_50.png')]"
+                ? "bg-[url('/assets/images/backgrounds/backgroundXflip_50.png')]"
+                : "bg-[url('/assets/images/backgrounds/background_50.png')]"
   }`}
 >
   <header
