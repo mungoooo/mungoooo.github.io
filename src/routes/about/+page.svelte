@@ -1,3 +1,7 @@
+<script>
+  import Audio from '../../components/Audio.svelte';
+</script>
+
 <section class="flex flex-col">
   <div class="mainminh full-padding flex flex-grow flex-col pt-[200px] sm:pt-[132px] md:ml-[150px]">
     <div

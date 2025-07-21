@@ -424,3 +424,8 @@ body {
         opacity: 1;
     }
 }
+
+
+.vds-title-text {
+    font-family: 'Roboto Condensed';
+}

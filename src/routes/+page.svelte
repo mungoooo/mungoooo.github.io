@@ -1,3 +1,7 @@
+<script>
+  import Audio from '../components/Audio.svelte';
+</script>
+
 <main class="mainminh flex flex-grow flex-col pt-[180px] sm:pt-[132px]">
   <section class="mainminh4 flex items-center justify-center">
     <div class="flex items-center justify-center">
@@ -18,3 +22,4 @@
     </div>
   </section>
 </main>
+<!--<Audio title="Aong Title" src="assets/audio/curious_idling.wav" />-->
