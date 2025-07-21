@@ -9,23 +9,23 @@
       </div>
       <div class="button-group mb-[48px] flex items-center justify-between pr-[20px] pl-[20px]">
         <a href="https://open.spotify.com/album/7uXxtK21vLQB91UnUDFP9R">
-          <img class="button flex h-[40px]" src="../../assets/icons/Spotify_white.png" />
+          <img class="button flex h-[40px]" src="/assets/icons/Spotify_white.png" />
         </a>
         <a href="https://music.apple.com/us/album/euphony/1757283087?uo=4">
-          <img class="button flex h-[40px]" src="../../assets/icons/AppleMusic_white.png" />
+          <img class="button flex h-[40px]" src="/assets/icons/AppleMusic_white.png" />
         </a>
         <a href="https://www.youtube.com/playlist?list=OLAK5uy_l8RjtwpSJwmW9pMn3ftKdZt57p-uvUh6c">
-          <img class="button flex h-[40px]" src="../../assets/icons/Youtube_Music.png" />
+          <img class="button flex h-[40px]" src="/assets/icons/Youtube_Music.png" />
         </a>
         <a href="http://www.amazon.com/gp/product/B0D9CJK1VX">
-          <img class="button flex h-[40px]" src="../../assets/icons/amazon_music.png" />
+          <img class="button flex h-[40px]" src="/assets/icons/amazon_music.png" />
         </a>
         <a href="https://www.deezer.com/album/615263742">
-          <img class="button flex h-[40px]" src="../../assets/icons/deezer.png" />
+          <img class="button flex h-[40px]" src="/assets/icons/deezer.png" />
         </a>
       </div>
       <div class="mb-[48px] flex">
-        <img src="../../assets/images/embed/Euphony_Final.png" />
+        <img src="/assets/images/embed/Euphony_Final.png" />
       </div>
     </section>
   </main>
