@@ -3,12 +3,6 @@
   import { onMount } from 'svelte';
   import '../app.css';
 
-  import Instagram from '../assets/icons/Instagram_white.png';
-  import Youtube from '../assets/icons/Youtube.png';
-  import AppleMusic from '../assets/icons/AppleMusic_white.png';
-  import Spotify from '../assets/icons/Spotify_white.png';
-  import IMDB from '../assets/icons/IMDB_white.png';
-
   let { children } = $props();
 
   // State variables
@@ -215,27 +209,27 @@
       <div class="button-group flex space-x-3 opacity-80">
         <div class="button">
           <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
-            <img src={Instagram} class="h-[30px]" alt="Instagram" />
+            <img src="/assets/icons/Instagram_white.png" class="h-[30px]" alt="Instagram" />
           </a>
         </div>
         <div class="button">
           <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
-            <img src={Youtube} class="h-[30px]" alt="YouTube" />
+            <img src="/assets/icons/Youtube.png" class="h-[30px]" alt="YouTube" />
           </a>
         </div>
         <div class="button">
           <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
-            <img src={Spotify} class="h-[30px]" alt="Spotify" />
+            <img src="/assets/icons/Spotify_white.png" class="h-[30px]" alt="Spotify" />
           </a>
         </div>
         <div class="button">
           <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
-            <img src={AppleMusic} class="h-[30px]" alt="Apple Music" />
+            <img src="/assets/icons/AppleMusic_white.png" class="h-[30px]" alt="Apple Music" />
           </a>
         </div>
         <div class="button">
           <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
-            <img src={IMDB} class="h-[30px]" alt="IMDb" />
+            <img src="/assets/icons/IMDb.png" class="h-[30px]" alt="IMDb" />
           </a>
         </div>
       </div>
@@ -290,17 +284,17 @@
       >
         <div class="button">
           <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
-            <img src={Instagram} class="h-[30px]" alt="Instagram" />
+            <img src="/assets/icons/Instagram_white.png" class="h-[30px]" alt="Instagram" />
           </a>
         </div>
         <div class="button">
           <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
-            <img src={Youtube} class="h-[30px]" alt="YouTube" />
+            <img src="/assets/icons/Youtube.png" class="h-[30px]" alt="YouTube" />
           </a>
         </div>
         <div class="button">
           <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
-            <img src={Spotify} class="h-[30px]" alt="Spotify" />
+            <img src="/assets/icons/Spotify_white.png" class="h-[30px]" alt="Spotify" />
           </a>
         </div>
         <div class="button">
@@ -309,12 +303,12 @@
             href="https://music.apple.com/artist/mungo-mclaggan/1611932686"
             target="_blank"
           >
-            <img src={AppleMusic} class="h-[30px]" alt="Apple Music" />
+            <img alt="apple music icon" src="/assets/icons/AppleMusic_white.png" class="h-[30px]" />
           </a>
         </div>
         <div class="button">
           <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
-            <img src={IMDB} class="h-[30px]" alt="IMDb" />
+            <img src="/assets/icons/IMDb.png" class="h-[30px]" alt="IMDb" />
           </a>
         </div>
       </li>
