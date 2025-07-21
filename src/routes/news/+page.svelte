@@ -40,7 +40,7 @@
                 binge-eating through the lens of fantasy horror.
               </p>
               <a href="https://www.imdb.com/title/tt28080250/" target="_blank">
-                <img class="button3 flex flex-col" src="../assets/images/embed/1s2.png" />
+                <img class="button3 flex flex-col" src="/assets/images/embed/1s2.png" />
               </a>
             </div>
           </div>
@@ -66,7 +66,7 @@
                 .
               </p>
               <img
-                src="../assets/images/embed/Chrome Poster_8.1.1_8.1.2.jpg"
+                src="/assets/images/embed/Chrome Poster_8.1.1_8.1.2.jpg"
                 class="h-auto w-full self-center"
               />
 
@@ -92,11 +92,11 @@
                     on all major streaming platforms.
                   </p>
                 </div>
-                <img src="../assets/images/embed/DSC04939.JPG" class="hide mt-6 h-auto w-full" />
+                <img src="/assets/images/embed/DSC04939.JPG" class="hide mt-6 h-auto w-full" />
               </div>
             </div>
 
-            <img src="../assets/images/embed/DSC04939.JPG" class="unhide h-auto w-full" />
+            <img src="/assets/images/embed/DSC04939.JPG" class="unhide h-auto w-full" />
 
             <div class="space-y-6">
               <p>
@@ -107,7 +107,7 @@
               </p>
             </div>
 
-            <img src="../assets/images/embed/POV24_ChromeTeam.jpg" class="mb-0 h-auto w-full" />
+            <img src="/assets/images/embed/POV24_ChromeTeam.jpg" class="mb-0 h-auto w-full" />
           </div>
         </div>
 
@@ -119,10 +119,10 @@
             </span>
           </h1>
           <div class="grid p-[24px] md:grid-cols-2">
-            <a href="../releases/chrome/" target="_blank">
+            <a href="/releases/chrome/" target="_blank">
               <img
                 class="button3 flex flex-col"
-                src="../assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg"
+                src="/assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg"
               />
             </a>
             <p class="p-[24px] pr-0 pl-0 md:pt-0 md:pl-[24px]">
@@ -144,8 +144,8 @@
             </span>
           </h1>
           <div class="grid p-[24px] md:grid-cols-2">
-            <a href="../releases/euphony/" target="_blank">
-              <img class="button3 flex flex-col" src="../assets/images/embed/Euphony_Final.png" />
+            <a href="/releases/euphony/" target="_blank">
+              <img class="button3 flex flex-col" src="/assets/images/embed/Euphony_Final.png" />
             </a>
             <p class="p-[24px] pr-0 pl-0 md:pt-0 md:pl-[24px]">
               Mungo McLaggan's latest album
