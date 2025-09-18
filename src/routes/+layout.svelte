@@ -144,20 +144,20 @@
   const getBgClass = () => {
     switch (page.url.pathname) {
       case '/':
-        return "fade-in-page bg-[url('/assets/images/backgrounds/background.jpg')] bg-contain";
+        return "fade-in-page bg-[url('/assets/images/backgrounds/background.jpg')] bg-center bg-cover";
       case '/about/':
-        return "bg-[url('/assets/images/backgrounds/background_50.png')]";
+        return "bg-[url('/assets/images/backgrounds/background_50.png')] bg-fixed";
       case '/news/':
-        return "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_25.png')]";
+        return "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_25.png')] bg-fixed";
       case '/work/':
-        return "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_10.png')]";
+        return "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_10.png')] bg-fixed";
       case '/contact/':
-        return "bg-[url('/assets/images/backgrounds/backgroundXflip_50.png')]";
+        return "bg-[url('/assets/images/backgrounds/backgroundXflip_50.png')] bg-fixed";
       default:
         if (page.url.pathname.startsWith('/releases/')) {
-          return "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_25.png')]";
+          return "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_25.png')] bg-fixed";
         }
-        return "bg-[url('/assets/images/backgrounds/background_50.png')]";
+        return "bg-[url('/assets/images/backgrounds/background_50.png')] bg-fixed";
     }
   };
 </script>
@@ -181,7 +181,7 @@
   />
 </svelte:head>
 
-<div class={`flex min-h-screen flex-col bg-black bg-fixed bg-no-repeat ${getBgClass()}`}>
+<div class={`flex min-h-screen flex-col bg-black bg-no-repeat ${getBgClass()}`}>
   <header
     bind:this={bgHeader}
     id="bgHeader"
