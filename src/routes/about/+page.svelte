@@ -54,10 +54,13 @@
             all major streaming services.
           </a>
         </p>
+        <!-- 
+        MUNGO: use this to put audio players in!
         <div>
           <p class="font-semibold text-white p-2 text-xl">Curious Idling</p>
           <Audio title="Curious Idling" src="../assets/audio/curious_idling.wav" />
-        </div>
+        </div> 
+        -->
       </div>
       <span class="h-[2px] w-full bg-white/30"></span>
 
@@ -71,6 +74,7 @@
               <img
                 class="button3"
                 src="/assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg"
+                alt="Chrome Album Art"
               />
             </a>
             <h1
@@ -98,7 +102,7 @@
               </span>
             </h1>
             <a href="../news/" target="_blank">
-              <img class="button3" src="/assets/images/embed/1s2.png" />
+              <img class="button3" src="/assets/images/embed/1s2.png" alt="One Swallow Two Poster" />
             </a>
           </div>
           <h1 class="text-secondary mt-[36px] text-center font-[Wittgenstein] text-[20px]">
