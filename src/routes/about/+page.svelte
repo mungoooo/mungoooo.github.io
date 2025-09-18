@@ -54,6 +54,10 @@
             all major streaming services.
           </a>
         </p>
+        <div>
+          <p class="font-semibold text-white p-2 text-xl">Curious Idling</p>
+          <Audio title="Curious Idling" src="../assets/audio/curious_idling.wav" />
+        </div>
       </div>
       <span class="h-[2px] w-full bg-white/30"></span>
 
