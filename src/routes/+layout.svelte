@@ -140,6 +140,26 @@
     (window as any).hideWork = hideWork;
     (window as any).showWork = showWork;
   }
+
+  const getBgClass = () => {
+    switch (page.url.pathname) {
+      case '/':
+        return "fade-in-page bg-[url('/assets/images/backgrounds/background.jpg')] bg-contain";
+      case '/about/':
+        return "bg-[url('/assets/images/backgrounds/background_50.png')]";
+      case '/news/':
+        return "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_25.png')]";
+      case '/work/':
+        return "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_10.png')]";
+      case '/contact/':
+        return "bg-[url('/assets/images/backgrounds/backgroundXflip_50.png')]";
+      default:
+        if (page.url.pathname.startsWith('/releases/')) {
+          return "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_25.png')]";
+        }
+        return "bg-[url('/assets/images/backgrounds/background_50.png')]";
+    }
+  };
 </script>
 
 <svelte:head>
@@ -161,23 +181,7 @@
   />
 </svelte:head>
 
-<div
-  class={`flex min-h-screen flex-col bg-black bg-fixed bg-no-repeat ${
-    page.url.pathname === '/'
-      ? "fade-in-page bg-[url('/assets/images/backgrounds/background.jpg')] bg-contain"
-      : page.url.pathname === '/about'
-        ? "bg-[url('/assets/images/backgrounds/background_50.png')]"
-        : page.url.pathname.startsWith('/releases/')
-          ? "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_25.png')]"
-          : page.url.pathname === '/news'
-            ? "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_25.png')]"
-            : page.url.pathname === '/work'
-              ? "bg-[url('/assets/images/backgrounds/background_50.png')] md:bg-[url('/assets/images/backgrounds/backgroundXflip_10.png')]"
-              : page.url.pathname === '/contact'
-                ? "bg-[url('/assets/images/backgrounds/backgroundXflip_50.png')]"
-                : "bg-[url('/assets/images/backgrounds/background_50.png')]"
-  }`}
->
+<div class={`flex min-h-screen flex-col bg-black bg-fixed bg-no-repeat ${getBgClass()}`}>
   <header
     bind:this={bgHeader}
     id="bgHeader"
@@ -260,21 +264,21 @@
       <li
         class="mt-[50px] mb-[37px] flex items-center justify-between pr-[4vw] pl-[20px] text-[25px] sm:mt-[0px] sm:mb-[0px] sm:pr-[6vw] sm:pb-[28px]"
       >
-        <a href="/about/" class={`text-button ${page.url.pathname === '/about' ? 'selected' : ''}`}>
+        <a href="/about/" class={`text-button ${page.url.pathname === '/about/' ? 'selected' : ''}`}>
           About
         </a>
         <span class="mx-2 h-[30px] w-[2px] bg-white/30"></span>
-        <a href="/work/" class={`text-button ${page.url.pathname === '/work' ? 'selected' : ''}`}>
+        <a href="/work/" class={`text-button ${page.url.pathname === '/work/' ? 'selected' : ''}`}>
           Work
         </a>
         <span class="mx-2 h-[30px] w-[2px] bg-white/30"></span>
-        <a href="/news/" class={`text-button ${page.url.pathname === '/news' ? 'selected' : ''}`}>
+        <a href="/news/" class={`text-button ${page.url.pathname === '/news/' ? 'selected' : ''}`}>
           News
         </a>
         <span class="mx-2 h-[30px] w-[2px] bg-white/30"></span>
         <a
           href="/contact/"
-          class={`text-button ${page.url.pathname === '/contact' ? 'selected' : ''}`}
+          class={`text-button ${page.url.pathname === '/contact/' ? 'selected' : ''}`}
         >
           Contact
         </a>
@@ -323,25 +327,25 @@
         <li class="flex justify-end">
           <a
             href="/about/"
-            class={`text-button ${page.url.pathname === '/about' ? 'selected' : ''}`}
+            class={`text-button ${page.url.pathname === '/about/' ? 'selected' : ''}`}
           >
             About
           </a>
         </li>
         <li class="flex justify-end">
-          <a href="/work/" class={`text-button ${page.url.pathname === '/work' ? 'selected' : ''}`}>
+          <a href="/work/" class={`text-button ${page.url.pathname === '/work/' ? 'selected' : ''}`}>
             Work
           </a>
         </li>
         <li class="flex justify-end">
-          <a href="/news/" class={`text-button ${page.url.pathname === '/news' ? 'selected' : ''}`}>
+          <a href="/news/" class={`text-button ${page.url.pathname === '/news/' ? 'selected' : ''}`}>
             News
           </a>
         </li>
         <li class="flex justify-end">
           <a
             href="/contact/"
-            class={`text-button ${page.url.pathname === '/contact' ? 'selected' : ''}`}
+            class={`text-button ${page.url.pathname === '/contact/' ? 'selected' : ''}`}
           >
             Contact
           </a>
