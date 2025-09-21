@@ -210,30 +210,35 @@
         </h1>
       </a>
       <h2 class="text-secondary mt-[-8px] mb-[8px] text-[20px] sm:mt-[-12px]">COMPOSER</h2>
-      <div class="button-group flex space-x-3 opacity-80">
+      <div class="button-group flex w-[250px] space-x-3 opacity-80">
         <div class="button">
           <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
-            <img src="/assets/icons/Instagram_white.png" class="h-[30px]" alt="Instagram" />
+            <img src="/assets/icons/Instagram_white.png" class="h-[25px]" alt="Instagram" />
           </a>
         </div>
         <div class="button">
           <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
-            <img src="/assets/icons/Youtube.png" class="h-[30px]" alt="YouTube" />
+            <img src="/assets/icons/Youtube.png" class="h-[25px]" alt="YouTube" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="https://mungomclaggan.bandcamp.com" target="_blank">
+            <img src="/assets/icons/bandcamp.png" class="h-[25px]" alt="Bandcamp" />
           </a>
         </div>
         <div class="button">
           <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
-            <img src="/assets/icons/Spotify_white.png" class="h-[30px]" alt="Spotify" />
+            <img src="/assets/icons/Spotify_white.png" class="h-[25px]" alt="Spotify" />
           </a>
         </div>
         <div class="button">
           <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
-            <img src="/assets/icons/AppleMusic_white.png" class="h-[30px]" alt="Apple Music" />
+            <img src="/assets/icons/AppleMusic_white.png" class="h-[25px]" alt="Apple Music" />
           </a>
         </div>
         <div class="button">
           <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
-            <img src="/assets/icons/IMDb.png" class="h-[30px]" alt="IMDb" />
+            <img src="/assets/icons/IMDb.png" class="h-[25px]" alt="IMDb" />
           </a>
         </div>
       </div>
@@ -262,9 +267,12 @@
       onclick={handleMenuClick}
     >
       <li
-        class="mt-[50px] mb-[37px] flex items-center justify-between pr-[4vw] pl-[20px] text-[25px] sm:mt-[0px] sm:mb-[0px] sm:pr-[6vw] sm:pb-[28px]"
+        class="mt-[50px] mb-[39px] flex items-center justify-between pr-[4vw] pl-[20px] text-[25px] sm:mt-[0px] sm:mb-[0px] sm:pr-[6vw] sm:pb-[30px]"
       >
-        <a href="/about/" class={`text-button ${page.url.pathname === '/about/' ? 'selected' : ''}`}>
+        <a
+          href="/about/"
+          class={`text-button ${page.url.pathname === '/about/' ? 'selected' : ''}`}
+        >
           About
         </a>
         <span class="mx-2 h-[30px] w-[2px] bg-white/30"></span>
@@ -284,21 +292,26 @@
         </a>
       </li>
       <li
-        class="button-group ml-[20px] flex w-[195px] items-end justify-start space-x-3 opacity-80"
+        class="button-group ml-[20px] flex w-[250px] items-end justify-start space-x-3 opacity-80"
       >
         <div class="button">
           <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
-            <img src="/assets/icons/Instagram_white.png" class="h-[30px]" alt="Instagram" />
+            <img src="/assets/icons/Instagram_white.png" class="h-[25px]" alt="Instagram" />
           </a>
         </div>
         <div class="button">
           <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
-            <img src="/assets/icons/Youtube.png" class="h-[30px]" alt="YouTube" />
+            <img src="/assets/icons/Youtube.png" class="h-[25px]" alt="YouTube" />
+          </a>
+        </div>
+        <div class="button">
+          <a href="https://mungomclaggan.bandcamp.com" target="_blank">
+            <img src="/assets/icons/bandcamp.png" class="h-[25px]" alt="Bandcamp" />
           </a>
         </div>
         <div class="button">
           <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
-            <img src="/assets/icons/Spotify_white.png" class="h-[30px]" alt="Spotify" />
+            <img src="/assets/icons/Spotify_white.png" class="h-[25px]" alt="Spotify" />
           </a>
         </div>
         <div class="button">
@@ -307,12 +320,12 @@
             href="https://music.apple.com/artist/mungo-mclaggan/1611932686"
             target="_blank"
           >
-            <img alt="apple music icon" src="/assets/icons/AppleMusic_white.png" class="h-[30px]" />
+            <img alt="apple music icon" src="/assets/icons/AppleMusic_white.png" class="h-[25px]" />
           </a>
         </div>
         <div class="button">
           <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
-            <img src="/assets/icons/IMDb.png" class="h-[30px]" alt="IMDb" />
+            <img src="/assets/icons/IMDb.png" class="h-[25px]" alt="IMDb" />
           </a>
         </div>
       </li>
@@ -333,12 +346,18 @@
           </a>
         </li>
         <li class="flex justify-end">
-          <a href="/work/" class={`text-button ${page.url.pathname === '/work/' ? 'selected' : ''}`}>
+          <a
+            href="/work/"
+            class={`text-button ${page.url.pathname === '/work/' ? 'selected' : ''}`}
+          >
             Work
           </a>
         </li>
         <li class="flex justify-end">
-          <a href="/news/" class={`text-button ${page.url.pathname === '/news/' ? 'selected' : ''}`}>
+          <a
+            href="/news/"
+            class={`text-button ${page.url.pathname === '/news/' ? 'selected' : ''}`}
+          >
             News
           </a>
         </li>
