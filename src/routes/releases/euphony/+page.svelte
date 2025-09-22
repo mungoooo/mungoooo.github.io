@@ -44,7 +44,7 @@
         </a>
       </div>
       <div class="mb-[48px] flex">
-        <img src="/assets/images/embed/Euphony_Final.png" alt="Album Cover" />
+        <img src="/assets/images/embed/Euphony_Final.jpg" alt="Album Cover" />
       </div>
     </section>
   </main>

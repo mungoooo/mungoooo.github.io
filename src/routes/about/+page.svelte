@@ -9,7 +9,7 @@
     >
       <div class="flex flex-col pt-[20px] md:grid md:grid-cols-2">
         <!--Remeber to take off the pt-[30px] if adding a new item on top-->
-        <img alt="Mungo" src="/assets/images/embed/mungo_5.1.5.png" />
+        <img alt="Mungo" src="/assets/images/embed/mungo_5.1.5.jpg" />
         <p
           class="text-style-primary font-style-2 self-end pt-3 text-[clamp(1.5rem,4vw,3rem)] md:pt-0 md:pl-6 md:text-[clamp(1.5rem,3vw,2rem)]"
         >
@@ -102,7 +102,11 @@
               </span>
             </h1>
             <a href="../news/" target="_blank">
-              <img class="button3" src="/assets/images/embed/1s2.png" alt="One Swallow Two Poster" />
+              <img
+                class="button3"
+                src="/assets/images/embed/1s2.jpg"
+                alt="One Swallow Two Poster"
+              />
             </a>
           </div>
           <h1 class="text-secondary mt-[36px] text-center font-[Wittgenstein] text-[20px]">

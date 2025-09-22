@@ -34,7 +34,7 @@
             >
               <img
                 class="w-[100px] rounded-md"
-                src="assets/images/embed/FinalCover_10mb.png"
+                src="assets/images/embed/FinalCover.jpg"
                 alt="Remembrance Bandcamp Page"
               />
             </a>

@@ -50,6 +50,7 @@
             <img
               src="/assets/images/embed/Pulse.jpg"
               class="flex h-full w-full items-center justify-center object-contain opacity-50 md:opacity-80"
+              alt="Pulse Poster"
             />
           </div>
           <div
@@ -63,7 +64,7 @@
             </div>
             <div class="button2 pt-[30px]">
               <a href="https://www.imdb.com/title/tt34894135/" target="_blank">
-                <img src="/assets/icons/IMDb.png" class="h-[40px]" />
+                <img src="/assets/icons/IMDb.png" class="h-[40px]" alt="IMDb Logo" />
               </a>
             </div>
           </div>
@@ -122,9 +123,11 @@
               <img
                 src="/assets/laurels/chrome/laurels_cisa-officialselection_white.png"
                 class="max-h-[250px]"
+                alt="Cannes Indie Shorts Official Selection Laurel"
               />
               <img
                 src="/assets/laurels/chrome/NYUSFF_2025_Honorable_Laurel_white.png"
+                alt="NYU Sports Film Festival Honorable Mention Laurel"
                 class="max-h-[200px]"
               />
             </div>
@@ -134,8 +137,9 @@
         <div class="mainminh-poster relative md:grid md:grid-cols-2">
           <div class="mainminh-poster h-full">
             <img
-              src="/assets/images/embed/1s2.png"
+              src="/assets/images/embed/1s2.jpg"
               class="flex h-full w-full items-center justify-center object-contain opacity-50 md:opacity-80"
+              alt="One Swallow Two Poster"
             />
           </div>
           <div
@@ -151,7 +155,7 @@
             </div>
             <div class="button2 pt-[30px]">
               <a href="https://www.imdb.com/title/tt28080250/" target="_blank">
-                <img src="/assets/icons/IMDb.png" class="h-[40px]" />
+                <img src="/assets/icons/IMDb.png" class="h-[40px]" alt="IMDb Logo" />
               </a>
             </div>
           </div>

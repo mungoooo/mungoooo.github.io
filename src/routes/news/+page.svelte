@@ -40,7 +40,11 @@
                 binge-eating through the lens of fantasy horror.
               </p>
               <a href="https://www.imdb.com/title/tt28080250/" target="_blank">
-                <img class="button3 flex flex-col" src="/assets/images/embed/1s2.png" />
+                <img
+                  class="button3 flex flex-col"
+                  src="/assets/images/embed/1s2.jpg"
+                  alt="One Swallow Two Poster"
+                />
               </a>
             </div>
           </div>
@@ -67,6 +71,7 @@
               </p>
               <img
                 src="/assets/images/embed/Chrome Poster_8.1.1_8.1.2.jpg"
+                alt="Chrome Poster"
                 class="h-auto w-full self-center"
               />
 
@@ -123,6 +128,7 @@
               <img
                 class="button3 flex flex-col"
                 src="/assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg"
+                alt="Chrome Album Cover"
               />
             </a>
             <p class="p-[24px] pr-0 pl-0 md:pt-0 md:pl-[24px]">
@@ -145,7 +151,11 @@
           </h1>
           <div class="grid p-[24px] md:grid-cols-2">
             <a href="/releases/euphony/" target="_blank">
-              <img class="button3 flex flex-col" src="/assets/images/embed/Euphony_Final.png" />
+              <img
+                class="button3 flex flex-col"
+                src="/assets/images/embed/Euphony_Final.jpg"
+                alt="Euphony Album Cover"
+              />
             </a>
             <p class="p-[24px] pr-0 pl-0 md:pt-0 md:pl-[24px]">
               Mungo McLaggan's latest album
