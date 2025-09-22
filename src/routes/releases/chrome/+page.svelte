@@ -11,27 +11,51 @@
       </div>
       <div class="button-group mb-[48px] flex items-center justify-between pr-[20px] pl-[20px]">
         <a href="https://open.spotify.com/album/2jMIjOiD1fpCB0EMa72EaU">
-          <img class="button flex h-[40px]" src="/assets/icons/Spotify_white.png" />
+          <img
+            class="button flex h-[40px]"
+            src="/assets/icons/Spotify_white.png"
+            alt="Spotify Logo"
+          />
         </a>
         <a
           href="https://music.apple.com/us/album/chrome-original-motion-picture-soundtrack-ep/1766067864?uo=4"
         >
-          <img class="button flex h-[40px]" src="/assets/icons/AppleMusic_white.png" />
+          <img
+            class="button flex h-[40px]"
+            src="/assets/icons/AppleMusic_white.png"
+            alt="Apple Music Logo"
+          />
+        </a>
+        <a
+          href="https://mungomclaggan.bandcamp.com/album/chrome-original-motion-picture-soundtrack"
+        >
+          <img class="button flex h-[40px]" src="/assets/icons/bandcamp.png" alt="Bandcamp Logo" />
         </a>
         <a href="https://www.youtube.com/playlist?list=OLAK5uy_nMhtGuxnozNz4cZV4T2G8FQFg-r1M6VAs">
-          <img class="button flex h-[40px]" src="/assets/icons/Youtube_Music.png" />
+          <img
+            class="button flex h-[40px]"
+            src="/assets/icons/Youtube_Music.png"
+            alt="Youtube Music Logo"
+          />
         </a>
         <a
           href="https://amazon.com/music/player/albums/B0DFV6QN1F?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_8RUGiqpxtAdUUvBvAlps2Pw8d"
         >
-          <img class="button flex h-[40px]" src="/assets/icons/amazon_music.png" />
+          <img
+            class="button flex h-[40px]"
+            src="/assets/icons/amazon_music.png"
+            alt="Amazon Music Logo"
+          />
         </a>
         <a href="https://www.deezer.com/album/637280081">
-          <img class="button flex h-[40px]" src="/assets/icons/deezer.png" />
+          <img class="button flex h-[40px]" src="/assets/icons/deezer.png" alt="Deezer Logo" />
         </a>
       </div>
       <div class="mb-[48px] flex">
-        <img src="/assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg" />
+        <img
+          src="/assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg"
+          alt="Album Cover"
+        />
       </div>
     </section>
   </main>

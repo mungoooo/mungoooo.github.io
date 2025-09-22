@@ -23,7 +23,7 @@
     >
       <div class="flex flex-col">
         <div class="flex items-center justify-center p-[5px]">
-          <p class="font-style-2 text-primary mb-[5px] text-[25px] underline">UPCOMING RELEASE</p>
+          <p class="font-style-2 text-primary mb-[5px] text-[25px] font-bold">UPCOMING RELEASE</p>
         </div>
         <div class="flex flex-row">
           <div>
@@ -45,12 +45,10 @@
               <p class="items-center">Available</p>
               <p class="items-center">October 3rd:</p>
             </div>
-            <ul
-              class="button-group mb-[10px] flex flex-col items-center justify-center space-y-[20px]"
-            >
+            <ul class="mb-[10px] flex flex-col items-center justify-center space-y-[20px]">
               <li>
                 <a
-                  class="bg-spotify-green button br-[2px] flex space-x-1 rounded-2xl p-[4px]"
+                  class="hover:bg-spotify-green button br-[2px] flex space-x-1 rounded-2xl bg-black/35 p-[4px] transition duration-150"
                   href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Faccounts.spotify.com%2Fauthorize%3Fscope%3Duser-follow-modify%2Buser-read-email%2Buser-follow-read%2Buser-library-modify%2Buser-read-birthdate%2Bplaylist-modify-private%2Buser-read-recently-played%2Buser-top-read%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fdistrokid.com%252Fspotify%252Fcallback%26state%3D89CA%26client_id%3D4a85c6638c3743928bee71feacbbcbf5%26show_dialog%3Dfalse&client_id=4a85c6638c3743928bee71feacbbcbf5"
                   target="_blank"
                 >
@@ -60,7 +58,7 @@
               </li>
               <li>
                 <a
-                  class="bg-bandcamp-blue button flex space-x-1 rounded-2xl p-[4px]"
+                  class="hover:bg-bandcamp-blue button flex space-x-1 rounded-2xl bg-black/35 p-[4px] transition duration-150"
                   href="https://mungomclaggan.bandcamp.com/album/remembrance"
                   target="_blank"
                 >
