@@ -3,8 +3,10 @@
 @theme {
     --color-secondary: rgb(190, 190, 190);
     --color-primary: rgb(250, 250, 250);
+    --breakpoint-xs: 450px;
     --breakpoint-enterclear: 720px;
     --breakpoint-3xl: 1600px;
+    --breakpoint-4xl: 2000px;
 }
 
 @utility mask-to-t {
