@@ -1,15 +1,15 @@
 <div class="no-full-padding flex min-h-screen flex-col">
-  <main class="mainminh flex flex-grow flex-col pt-[70px] sm:pt-[50px] md:ml-[150px]">
+  <main class="mainminh flex flex-grow flex-col pt-[70px] sm:pt-[70px] md:ml-[150px]">
     <section
-      class="text-secondary mx-auto flex w-[90%] max-w-[1000px] flex-col overflow-y-auto p-6 leading-relaxed [word-spacing:0.1rem] sm:w-[70%] sm:p-12 lg:w-[50%] xl:w-[40%] 2xl:w-[30%]"
+      class="text-secondary mx-auto flex w-[90%] max-w-[1000px] flex-col overflow-y-auto pt-26 pr-6 pl-6 leading-relaxed [word-spacing:0.1rem] sm:w-[70%] sm:p-12 lg:w-[50%] xl:w-[40%] 2xl:w-[30%]"
     >
       <div class="flex flex-col items-center justify-center p-7">
-        <h1 class="text-style-primary font-style-2 text-center text-[40px]">
+        <h1 class="text-style-primary font-style-2 text-center text-[30px] sm:text-[40px]">
           Chrome (Original Motion Picture Soundtrack)
         </h1>
         <!--<h1 class="text-white text-center text-[30px]">Mungo McLaggan</h1>-->
       </div>
-      <div class="button-group mb-[48px] flex items-center justify-between pr-[20px] pl-[20px]">
+      <div class="button-group mb-[24px] flex items-center justify-between pr-[20px] pl-[20px]">
         <a href="https://open.spotify.com/album/2jMIjOiD1fpCB0EMa72EaU">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
@@ -59,7 +59,7 @@
           />
         </a>
       </div>
-      <div class="mb-[48px] flex">
+      <div class="flex">
         <img
           src="/assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg"
           alt="Album Cover"
