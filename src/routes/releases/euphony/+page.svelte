@@ -22,18 +22,18 @@
             alt="Apple Music Logo"
           />
         </a>
-        <a href="https://www.youtube.com/playlist?list=OLAK5uy_l8RjtwpSJwmW9pMn3ftKdZt57p-uvUh6c">
-          <img
-            class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/Youtube_Music.png"
-            alt="YouTube Music Logo"
-          />
-        </a>
         <a href="https://mungomclaggan.bandcamp.com/album/euphony">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
             src="/assets/icons/bandcamp.png"
             alt="Bandcamp Logo"
+          />
+        </a>
+        <a href="https://www.youtube.com/playlist?list=OLAK5uy_l8RjtwpSJwmW9pMn3ftKdZt57p-uvUh6c">
+          <img
+            class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
+            src="/assets/icons/Youtube_Music.png"
+            alt="YouTube Music Logo"
           />
         </a>
         <a href="http://www.amazon.com/gp/product/B0D9CJK1VX">
