@@ -52,7 +52,7 @@
 
         <div id="chrome" class="flex scroll-mt-[170px] flex-col">
           <h1 class="text-style-primary font-style-2 p-[24px] pb-[12px] text-[30px]">
-            <span class="flex items-center justify-start">Chrome wins best Score at POV24!</span>
+            <span class="flex items-center justify-start">Chrome wins best Score at POV34!</span>
             <span class="text-secondary flex items-center justify-start text-[25px]">
               September 29th, 2024
             </span>
