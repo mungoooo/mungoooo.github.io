@@ -70,18 +70,18 @@
             LATEST RELEASE:
           </h1>
           <div class="flex flex-col md:grid md:grid-cols-2">
-            <a href="../releases/chrome/" target="_blank">
+            <a href="../releases/remembrance/" target="_blank">
               <img
                 class="button3"
-                src="/assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg"
+                src="/assets/images/embed/FinalCover.jpg"
                 alt="Chrome Album Art"
               />
             </a>
             <h1
               class="text-style-primary mt-[24px] flex flex-col items-center justify-center text-center text-[30px] md:mt-0 md:ml-[24px]"
             >
-              Chrome (Original Motion Picture Soundtrack)
-              <span class="text-secondary text-center text-[25px]">September 28th, 2024</span>
+              Remembrance
+              <span class="text-secondary text-center text-[25px]">October 3rd, 2025</span>
             </h1>
           </div>
         </div>
