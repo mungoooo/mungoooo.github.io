@@ -29,7 +29,7 @@
           <div>
             <a
               class="flex items-center justify-center"
-              href="https://mungomclaggan.bandcamp.com/album/remembrance"
+              href="https://mungomclaggan.com/releases/remembrance"
               target="_blank"
             >
               <img
