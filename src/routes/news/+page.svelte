@@ -4,6 +4,31 @@
       class="text-secondary mask-to-t2 mx-auto flex w-full max-w-[1000px] flex-col overflow-y-auto bg-black/30 p-0 leading-relaxed [word-spacing:0.1rem] sm:p-12"
     >
       <div class="flex flex-col">
+        <div class="mb-[100px] flex flex-col">
+          <h1 class="text-style-primary font-style-2 p-[24px] pb-[12px] text-[30px]">
+            <span class="flex items-center justify-start">NEW RELEASE: Remembrance</span>
+            <span class="text-secondary flex items-center justify-start text-[25px]">
+              October 3rd, 2025
+            </span>
+          </h1>
+          <div class="grid p-[24px] md:grid-cols-2">
+            <a href="/releases/remembrance/" target="_blank">
+              <img
+                class="button3 flex flex-col"
+                src="/assets/images/embed/FinalCover.jpg"
+                alt="Chrome Album Cover"
+              />
+            </a>
+            <p class="p-[24px] pr-0 pl-0 md:pt-0 md:pl-[24px]">
+              Mungo McLaggan's latest EP
+              <span class="italic">Remembrance</span>
+              is
+              <a href="../releases/remembrance/" target="_blank" class="button4">out now</a>
+              on all major streaming services!
+            </p>
+          </div>
+        </div>
+
         <div class="mb-[100px] flex flex-col pt-[30px]">
           <!--Remeber to take off the pt-[30px] when adding a new item on top-->
           <h1 class="text-style-primary font-style-2 p-[24px] pt-0 pb-[12px] text-[30px]">
