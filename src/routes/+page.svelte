@@ -23,9 +23,9 @@
     >
       <div class="flex flex-col">
         <div class="flex items-center justify-center p-[5px]">
-          <p class="font-style-2 text-primary mb-[5px] text-[25px] font-bold">UPCOMING RELEASE</p>
+          <p class="font-style-2 text-primary mb-[5px] text-[25px] font-bold">NEW RELEASE!</p>
         </div>
-        <div class="flex flex-row">
+        <div class="flex flex-col">
           <div>
             <a
               class="flex items-center justify-center"
@@ -39,34 +39,6 @@
               />
             </a>
             <p class="text-primary font-style-2 mt-[5px] text-center text-[22px]">Remembrance</p>
-          </div>
-          <div class="flex flex-col pr-[10px] pl-[10px]">
-            <div class="flex flex-col items-center pb-[15px] text-[15px]">
-              <p class="items-center">Available</p>
-              <p class="items-center">October 3rd:</p>
-            </div>
-            <ul class="mb-[10px] flex flex-col items-center justify-center space-y-[20px]">
-              <li>
-                <a
-                  class="hover:bg-spotify-green button br-[2px] flex space-x-1 rounded-2xl bg-black/35 p-[4px] transition duration-150"
-                  href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Faccounts.spotify.com%2Fauthorize%3Fscope%3Duser-follow-modify%2Buser-read-email%2Buser-follow-read%2Buser-library-modify%2Buser-read-birthdate%2Bplaylist-modify-private%2Buser-read-recently-played%2Buser-top-read%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fdistrokid.com%252Fspotify%252Fcallback%26state%3D89CA%26client_id%3D4a85c6638c3743928bee71feacbbcbf5%26show_dialog%3Dfalse&client_id=4a85c6638c3743928bee71feacbbcbf5"
-                  target="_blank"
-                >
-                  <img class="w-[15px]" src="/assets/icons/Spotify_white.png" alt="Spotify Logo" />
-                  <p class="font-style-2 text-primary items-start text-[12px]">PRE-SAVE</p>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="hover:bg-bandcamp-blue button flex space-x-1 rounded-2xl bg-black/35 p-[4px] transition duration-150"
-                  href="https://mungomclaggan.bandcamp.com/album/remembrance"
-                  target="_blank"
-                >
-                  <img class="w-[15px]" src="/assets/icons/bandcamp.png" alt="Bandcamp Logo" />
-                  <p class="font-style-2 text-primary text-[12px]">PRE-ORDER</p>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
