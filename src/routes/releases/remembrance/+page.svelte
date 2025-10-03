@@ -52,7 +52,7 @@
         </a>
       </div>
       <div class="flex">
-        <img src="/assets/images/embed/Euphony_Final.jpg" alt="Album Cover" />
+        <img src="/assets/images/embed/FinalCover.jpg" alt="Album Cover" />
       </div>
     </section>
   </main>

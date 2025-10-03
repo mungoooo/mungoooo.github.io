@@ -10,6 +10,8 @@ Mungo McLaggan's website -- built with SvelteKit and TailwindCSS.
    npm install
    ```
 
+_May need to run a cheeky 'git pull origin main' if you made changes on a different device_
+
 2. Develop to your heart's content!
 
    ```bash
