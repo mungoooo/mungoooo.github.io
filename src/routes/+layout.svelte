@@ -221,21 +221,25 @@
             <img src="/assets/icons/Youtube.png" class="h-[25px]" alt="YouTube" />
           </a>
         </div>
-        <div class="button">
-          <a href="https://mungomclaggan.bandcamp.com" target="_blank">
-            <img src="/assets/icons/bandcamp.png" class="h-[25px]" alt="Bandcamp" />
-          </a>
-        </div>
-        <div class="button">
-          <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
-            <img src="/assets/icons/Spotify_white.png" class="h-[25px]" alt="Spotify" />
-          </a>
-        </div>
-        <div class="button">
-          <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
-            <img src="/assets/icons/AppleMusic_white.png" class="h-[25px]" alt="Apple Music" />
-          </a>
-        </div>
+
+        {#if !page.url.pathname.startsWith('/releases')}
+          <div class="button">
+            <a href="https://mungomclaggan.bandcamp.com" target="_blank">
+              <img src="/assets/icons/bandcamp.png" class="h-[25px]" alt="Bandcamp" />
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
+              <img src="/assets/icons/Spotify_white.png" class="h-[25px]" alt="Spotify" />
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://music.apple.com/artist/mungo-mclaggan/1611932686" target="_blank">
+              <img src="/assets/icons/AppleMusic_white.png" class="h-[25px]" alt="Apple Music" />
+            </a>
+          </div>
+        {/if}
+
         <div class="button">
           <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
             <img src="/assets/icons/IMDb.png" class="h-[25px]" alt="IMDb" />
@@ -291,44 +295,51 @@
           Contact
         </a>
       </li>
-      <li
-        class="button-group ml-[20px] flex w-[250px] items-end justify-start space-x-3 opacity-80"
-      >
-        <div class="button">
-          <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
-            <img src="/assets/icons/Instagram_white.png" class="h-[25px]" alt="Instagram" />
-          </a>
-        </div>
-        <div class="button">
-          <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
-            <img src="/assets/icons/Youtube.png" class="h-[25px]" alt="YouTube" />
-          </a>
-        </div>
-        <div class="button">
-          <a href="https://mungomclaggan.bandcamp.com" target="_blank">
-            <img src="/assets/icons/bandcamp.png" class="h-[25px]" alt="Bandcamp" />
-          </a>
-        </div>
-        <div class="button">
-          <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
-            <img src="/assets/icons/Spotify_white.png" class="h-[25px]" alt="Spotify" />
-          </a>
-        </div>
-        <div class="button">
-          <a
-            aria-label="apple music artist"
-            href="https://music.apple.com/artist/mungo-mclaggan/1611932686"
-            target="_blank"
-          >
-            <img alt="apple music icon" src="/assets/icons/AppleMusic_white.png" class="h-[25px]" />
-          </a>
-        </div>
-        <div class="button">
-          <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
-            <img src="/assets/icons/IMDb.png" class="h-[25px]" alt="IMDb" />
-          </a>
-        </div>
-      </li>
+
+      {#if !page.url.pathname.startsWith('/releases')}
+        <li
+          class="button-group ml-[20px] flex w-[250px] items-end justify-start space-x-3 opacity-80"
+        >
+          <div class="button">
+            <a href="https://www.instagram.com/mungomclaggan/" target="_blank">
+              <img src="/assets/icons/Instagram_white.png" class="h-[25px]" alt="Instagram" />
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://www.youtube.com/@mungomclaggan" target="_blank">
+              <img src="/assets/icons/Youtube.png" class="h-[25px]" alt="YouTube" />
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://mungomclaggan.bandcamp.com" target="_blank">
+              <img src="/assets/icons/bandcamp.png" class="h-[25px]" alt="Bandcamp" />
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://open.spotify.com/artist/27ZwIPgJ1SX3iIjvHyyH07" target="_blank">
+              <img src="/assets/icons/Spotify_white.png" class="h-[25px]" alt="Spotify" />
+            </a>
+          </div>
+          <div class="button">
+            <a
+              aria-label="apple music artist"
+              href="https://music.apple.com/artist/mungo-mclaggan/1611932686"
+              target="_blank"
+            >
+              <img
+                alt="apple music icon"
+                src="/assets/icons/AppleMusic_white.png"
+                class="h-[25px]"
+              />
+            </a>
+          </div>
+          <div class="button">
+            <a href="https://www.imdb.com/name/nm16731844/" target="_blank">
+              <img src="/assets/icons/IMDb.png" class="h-[25px]" alt="IMDb" />
+            </a>
+          </div>
+        </li>
+      {/if}
     </ul>
   </header>
 
