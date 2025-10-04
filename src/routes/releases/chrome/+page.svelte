@@ -3,7 +3,7 @@
     <section
       class="text-secondary mx-auto flex w-[90%] max-w-[1000px] flex-col overflow-y-auto pt-26 pr-6 pl-6 leading-relaxed [word-spacing:0.1rem] sm:w-[70%] sm:p-12 lg:w-[50%] xl:w-[40%] 2xl:w-[30%]"
     >
-      <div class="flex flex-col items-center justify-center p-7">
+      <div class="flex flex-col items-center justify-center pt-7 pr-7 pb-1 pl-7 sm:pb-7">
         <h1 class="text-style-primary font-style-2 text-center text-[30px] sm:text-[40px]">
           Chrome (Original Motion Picture Soundtrack)
         </h1>
