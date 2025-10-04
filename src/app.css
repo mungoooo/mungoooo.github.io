@@ -372,6 +372,19 @@ body {
     color: rgb(190, 190, 190);
 }
 
+.button5 {
+    font-weight: 700;
+    color: rgb(210, 210, 210);
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.15s;
+}
+
+.button5:hover {
+    color: rgb(190, 190, 190);
+}
+
+
 .button img {
     transition: all 0.2s ease;
 }
