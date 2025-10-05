@@ -3,13 +3,17 @@
     <section
       class="text-secondary mx-auto flex w-[90%] max-w-[1000px] flex-col overflow-y-auto pt-26 pr-6 pl-6 leading-relaxed [word-spacing:0.1rem] sm:w-[70%] sm:p-12 lg:w-[50%] xl:w-[40%] 2xl:w-[30%]"
     >
-      <div class="flex flex-col items-center justify-center pt-7 pr-7 pb-1 pl-7 sm:pb-7">
-        <h1 class="text-style-primary font-style-2 text-center text-[30px] sm:text-[40px]">
+      <div
+        class="3xl:pt-0 flex flex-col items-center justify-center pt-10 pr-0 pb-2 pl-0 sm:pt-7 sm:pr-7 sm:pb-7 sm:pl-7"
+      >
+        <h1 class="text-style-primary font-style-2 text-center text-[29px] sm:text-[40px]">
           Chrome (Original Motion Picture Soundtrack)
         </h1>
         <!--<h1 class="text-white text-center text-[30px]">Mungo McLaggan</h1>-->
       </div>
-      <div class="button-group mb-[24px] flex items-center justify-between pr-[20px] pl-[20px]">
+      <div
+        class="button-group mb-[18px] flex items-center justify-between pr-[20px] pl-[20px] sm:mb-[24px]"
+      >
         <a href="https://open.spotify.com/album/2jMIjOiD1fpCB0EMa72EaU">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
