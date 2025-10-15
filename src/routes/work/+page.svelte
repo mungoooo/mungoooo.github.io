@@ -1,3 +1,7 @@
+<script>
+  import Audio from '../../components/Audio.svelte';
+</script>
+
 <div class="no-full-padding flex flex-col">
   <div class="relative flex flex-grow flex-col">
     <main
@@ -157,6 +161,13 @@
               <a href="https://www.imdb.com/title/tt28080250/" target="_blank">
                 <img src="/assets/icons/IMDb.webp" class="h-[40px]" alt="IMDb Logo" />
               </a>
+            </div>
+            <div class="w-[250px] lg:w-auto">
+              <p class="p-2 text-xl font-semibold text-white">Score excerpts:</p>
+              <div class="space-y-4">
+                <Audio title="Demon Calling" src="/assets/audio/1s2_excerpt1_2_master.wav" />
+                <Audio title="Sweet Tragedy" src="/assets/audio/1s2_excerpt2_2_master.wav" />
+              </div>
             </div>
           </div>
         </div>
