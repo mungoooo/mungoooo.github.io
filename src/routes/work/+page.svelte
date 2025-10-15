@@ -48,7 +48,7 @@
         <div class="mainminh-poster relative md:grid md:grid-cols-2">
           <div class="mainminh-poster h-full">
             <img
-              src="/assets/images/embed/Pulse.jpg"
+              src="/assets/images/embed/Pulse.webp"
               class="flex h-full w-full items-center justify-center object-contain opacity-50 md:opacity-80"
               alt="Pulse Poster"
             />
@@ -64,7 +64,7 @@
             </div>
             <div class="button2 pt-[30px]">
               <a href="https://www.imdb.com/title/tt34894135/" target="_blank">
-                <img src="/assets/icons/IMDb.png" class="h-[40px]" alt="IMDb Logo" />
+                <img src="/assets/icons/IMDb.webp" class="h-[40px]" alt="IMDb Logo" />
               </a>
             </div>
           </div>
@@ -121,12 +121,12 @@
             </div>
             <div class="grid grid-rows-2 items-center justify-center">
               <img
-                src="/assets/laurels/chrome/laurels_cisa-officialselection_white.png"
+                src="/assets/laurels/chrome/laurels_cisa-officialselection_white.webp"
                 class="max-h-[250px]"
                 alt="Cannes Indie Shorts Official Selection Laurel"
               />
               <img
-                src="/assets/laurels/chrome/NYUSFF_2025_Honorable_Laurel_white.png"
+                src="/assets/laurels/chrome/NYUSFF_2025_Honorable_Laurel_white.webp"
                 alt="NYU Sports Film Festival Honorable Mention Laurel"
                 class="max-h-[200px]"
               />
@@ -137,7 +137,7 @@
         <div class="mainminh-poster relative md:grid md:grid-cols-2">
           <div class="mainminh-poster h-full">
             <img
-              src="/assets/images/embed/1s2.jpg"
+              src="/assets/images/embed/1s2.webp"
               class="flex h-full w-full items-center justify-center object-contain opacity-50 md:opacity-80"
               alt="One Swallow Two Poster"
             />
@@ -155,7 +155,7 @@
             </div>
             <div class="button2 pt-[30px]">
               <a href="https://www.imdb.com/title/tt28080250/" target="_blank">
-                <img src="/assets/icons/IMDb.png" class="h-[40px]" alt="IMDb Logo" />
+                <img src="/assets/icons/IMDb.webp" class="h-[40px]" alt="IMDb Logo" />
               </a>
             </div>
           </div>

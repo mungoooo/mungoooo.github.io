@@ -17,7 +17,7 @@
         <a href="https://open.spotify.com/album/2jMIjOiD1fpCB0EMa72EaU">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/Spotify_white.png"
+            src="/assets/icons/Spotify_white.webp"
             alt="Spotify Logo"
           />
         </a>
@@ -26,7 +26,7 @@
         >
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/AppleMusic_white.png"
+            src="/assets/icons/AppleMusic_white.webp"
             alt="Apple Music Logo"
           />
         </a>
@@ -35,14 +35,14 @@
         >
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/bandcamp.png"
+            src="/assets/icons/bandcamp.webp"
             alt="Bandcamp Logo"
           />
         </a>
         <a href="https://www.youtube.com/playlist?list=OLAK5uy_nMhtGuxnozNz4cZV4T2G8FQFg-r1M6VAs">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/Youtube_Music.png"
+            src="/assets/icons/Youtube_Music.webp"
             alt="Youtube Music Logo"
           />
         </a>
@@ -51,21 +51,21 @@
         >
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/amazon_music.png"
+            src="/assets/icons/amazon_music.webp"
             alt="Amazon Music Logo"
           />
         </a>
         <a href="https://www.deezer.com/album/637280081">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/deezer.png"
+            src="/assets/icons/deezer.webp"
             alt="Deezer Logo"
           />
         </a>
       </div>
       <div class="flex">
         <img
-          src="/assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg"
+          src="/assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.webp"
           alt="Album Cover"
         />
       </div>

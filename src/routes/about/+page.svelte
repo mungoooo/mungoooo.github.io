@@ -9,7 +9,7 @@
     >
       <div class="flex flex-col pt-[20px] md:grid md:grid-cols-2">
         <!--Remeber to take off the pt-[30px] if adding a new item on top-->
-        <img alt="Mungo" src="/assets/images/embed/mungo_5.1.5.jpg" />
+        <img alt="Mungo" src="/assets/images/embed/mungo_5.1.5.webp" />
         <p
           class="text-style-primary font-style-2 self-end pt-3 text-[clamp(1.5rem,4vw,3rem)] md:pt-0 md:pl-6 md:text-[clamp(1.5rem,3vw,2rem)]"
         >
@@ -73,7 +73,7 @@
             <a href="../releases/remembrance/" target="_blank">
               <img
                 class="button3"
-                src="/assets/images/embed/FinalCover.jpg"
+                src="/assets/images/embed/FinalCover.webp"
                 alt="Chrome Album Art"
               />
             </a>
@@ -104,7 +104,7 @@
             <a href="../news/" target="_blank">
               <img
                 class="button3"
-                src="/assets/images/embed/1s2.jpg"
+                src="/assets/images/embed/1s2.webp"
                 alt="One Swallow Two Poster"
               />
             </a>

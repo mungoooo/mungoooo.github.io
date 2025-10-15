@@ -15,7 +15,7 @@
             <a href="/releases/remembrance/" target="_blank">
               <img
                 class="button3 flex flex-col"
-                src="/assets/images/embed/FinalCover.jpg"
+                src="/assets/images/embed/FinalCover.webp"
                 alt="Chrome Album Cover"
               />
             </a>
@@ -67,7 +67,7 @@
               <a href="https://www.imdb.com/title/tt28080250/" target="_blank">
                 <img
                   class="button3 flex flex-col"
-                  src="/assets/images/embed/1s2.jpg"
+                  src="/assets/images/embed/1s2.webp"
                   alt="One Swallow Two Poster"
                 />
               </a>
@@ -95,7 +95,7 @@
                 .
               </p>
               <img
-                src="/assets/images/embed/Chrome Poster_8.1.1_8.1.2.jpg"
+                src="/assets/images/embed/Chrome Poster_8.1.1_8.1.2.webp"
                 alt="Chrome Poster"
                 class="h-auto w-full self-center"
               />
@@ -122,11 +122,11 @@
                     on all major streaming platforms.
                   </p>
                 </div>
-                <img src="/assets/images/embed/DSC04939.JPG" class="hide mt-6 h-auto w-full" />
+                <img src="/assets/images/embed/DSC04939.webp" class="hide mt-6 h-auto w-full" />
               </div>
             </div>
 
-            <img src="/assets/images/embed/DSC04939.JPG" class="unhide h-auto w-full" />
+            <img src="/assets/images/embed/DSC04939.webp" class="unhide h-auto w-full" />
 
             <div class="space-y-6">
               <p>
@@ -137,7 +137,7 @@
               </p>
             </div>
 
-            <img src="/assets/images/embed/POV24_ChromeTeam.jpg" class="mb-0 h-auto w-full" />
+            <img src="/assets/images/embed/POV24_ChromeTeam.webp" class="mb-0 h-auto w-full" />
           </div>
         </div>
 
@@ -152,7 +152,7 @@
             <a href="/releases/chrome/" target="_blank">
               <img
                 class="button3 flex flex-col"
-                src="/assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.jpg"
+                src="/assets/images/embed/(FINAL)_Soundtrack_Album_Art_006_7.1.5.webp"
                 alt="Chrome Album Cover"
               />
             </a>
@@ -178,7 +178,7 @@
             <a href="/releases/euphony/" target="_blank">
               <img
                 class="button3 flex flex-col"
-                src="/assets/images/embed/Euphony_Final.jpg"
+                src="/assets/images/embed/Euphony_Final.webp"
                 alt="Euphony Album Cover"
               />
             </a>

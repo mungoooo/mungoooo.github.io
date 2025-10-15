@@ -11,48 +11,48 @@
         <a href="https://open.spotify.com/album/7uXxtK21vLQB91UnUDFP9R">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/Spotify_white.png"
+            src="/assets/icons/Spotify_white.webp"
             alt="Spotify Logo"
           />
         </a>
         <a href="https://music.apple.com/us/album/euphony/1757283087?uo=4">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/AppleMusic_white.png"
+            src="/assets/icons/AppleMusic_white.webp"
             alt="Apple Music Logo"
           />
         </a>
         <a href="https://mungomclaggan.bandcamp.com/album/euphony">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/bandcamp.png"
+            src="/assets/icons/bandcamp.webp"
             alt="Bandcamp Logo"
           />
         </a>
         <a href="https://www.youtube.com/playlist?list=OLAK5uy_l8RjtwpSJwmW9pMn3ftKdZt57p-uvUh6c">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/Youtube_Music.png"
+            src="/assets/icons/Youtube_Music.webp"
             alt="YouTube Music Logo"
           />
         </a>
         <a href="http://www.amazon.com/gp/product/B0D9CJK1VX">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/amazon_music.png"
+            src="/assets/icons/amazon_music.webp"
             alt="Amazon Music Logo"
           />
         </a>
         <a href="https://www.deezer.com/album/615263742">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/deezer.png"
+            src="/assets/icons/deezer.webp"
             alt="Deezer Logo"
           />
         </a>
       </div>
       <div class="flex">
-        <img src="/assets/images/embed/Euphony_Final.jpg" alt="Album Cover" />
+        <img src="/assets/images/embed/Euphony_Final.webp" alt="Album Cover" />
       </div>
     </section>
   </main>

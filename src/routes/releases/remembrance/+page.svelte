@@ -11,48 +11,48 @@
         <a href="https://open.spotify.com/album/0D1CsdJVtKlEiURv504jSM">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/Spotify_white.png"
+            src="/assets/icons/Spotify_white.webp"
             alt="Spotify Logo"
           />
         </a>
         <a href="https://music.apple.com/us/album/remembrance-ep/1838856184">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/AppleMusic_white.png"
+            src="/assets/icons/AppleMusic_white.webp"
             alt="Apple Music Logo"
           />
         </a>
         <a href="https://mungomclaggan.bandcamp.com/album/remembrance">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/bandcamp.png"
+            src="/assets/icons/bandcamp.webp"
             alt="Bandcamp Logo"
           />
         </a>
         <a href="https://www.youtube.com/playlist?list=OLAK5uy_nrZmSb65T7INi9-BybXP03NEO4N_ZXnKM">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/Youtube_Music.png"
+            src="/assets/icons/Youtube_Music.webp"
             alt="YouTube Music Logo"
           />
         </a>
         <a href="https://www.amazon.com/music/player/albums/B0FQ7GTTVG">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/amazon_music.png"
+            src="/assets/icons/amazon_music.webp"
             alt="Amazon Music Logo"
           />
         </a>
         <a href="https://www.deezer.com/en/album/818144511">
           <img
             class="button 4xl:h-[55px] xs:h-[45px] flex h-[32px]"
-            src="/assets/icons/deezer.png"
+            src="/assets/icons/deezer.webp"
             alt="Deezer Logo"
           />
         </a>
       </div>
       <div class="flex">
-        <img src="/assets/images/embed/FinalCover.jpg" alt="Album Cover" />
+        <img src="/assets/images/embed/FinalCover.webp" alt="Album Cover" />
       </div>
     </section>
   </main>
