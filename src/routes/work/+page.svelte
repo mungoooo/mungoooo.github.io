@@ -162,7 +162,7 @@
                 <img src="/assets/icons/IMDb.webp" class="h-[40px]" alt="IMDb Logo" />
               </a>
             </div>
-            <div class="w-[250px] lg:w-auto">
+            <div class="w-[255px] lg:w-auto">
               <p class="p-2 text-xl font-semibold text-white">Score excerpts:</p>
               <div class="space-y-4">
                 <Audio title="Demon Calling" src="/assets/audio/1s2_excerpt1_2_master.wav" />

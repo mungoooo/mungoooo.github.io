@@ -186,6 +186,10 @@
     }
 }
 
+.vds-audio-layout {
+  --audio-bg: rgba(0, 0, 0, 0.6);
+}
+
 .flicker {
     animation: flicker 1s infinite;
     opacity: 1;
