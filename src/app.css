@@ -187,7 +187,7 @@
 }
 
 .vds-audio-layout {
-  --audio-bg: rgba(0, 0, 0, 0.6);
+  --audio-bg: rgba(0, 0, 0, .6);
 }
 
 .flicker {

@@ -10,6 +10,47 @@
       <section
         class="full-work-padding mx-auto flex w-full max-w-[2000px] flex-col overflow-y-hidden pt-[20px] leading-relaxed [word-spacing:0.1rem] md:space-y-8 md:p-12"
       >
+        <div class="mainminh-poster relative md:grid md:grid-cols-2">
+          <div class="mainminh-poster h-full">
+            <img
+              src="/assets/images/embed/balladposter.webp"
+              class="flex h-full w-full items-center justify-center object-contain opacity-50 md:opacity-80"
+              alt="The Ballad of a Native Man Poster"
+            />
+          </div>
+          <div
+            class="text-primary absolute inset-0 flex h-full flex-col items-center justify-center pt-[30px] text-[20px] md:static md:items-center md:justify-center md:pt-0"
+          >
+            <div
+              class="text-style-primary font-style-2 mb-[10px] bg-black/80 text-center text-[30px] md:bg-transparent"
+            >
+              "The Ballad of a Native Man"
+            </div>
+            <div class="mb-[10px] bg-black/80 text-center md:bg-transparent">Short Film (2025)</div>
+            <div class="bg-black/80 text-center md:bg-transparent">
+              <span class="bg-black/80 pr-[5px] italic md:bg-transparent">Directed by:</span>
+              Penny J. Gullion
+            </div>
+            <!--<div class="button2 pt-[30px]">
+              <a href="https://www.imdb.com/title/tt34894135/" target="_blank">
+                <img src="/assets/icons/IMDb.webp" class="h-[40px]" alt="IMDb Logo" />
+              </a>
+            </div>-->
+            <div class="flex items-center justify-center pt-[30px] sm:pb-[70px]">
+              <div class="w-[255px] lg:w-auto">
+                <p class="p-2 text-xl font-semibold text-white">Score excerpts:</p>
+                <div class="space-y-4">
+                  <Audio
+                    title="Uncertain Horizon"
+                    src="/assets/audio/Ballad_excerpt000_master.wav"
+                  />
+                  <Audio title="Standoff" src="/assets/audio/Ballad_excerpt001_master.wav" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="mainminh-vr relative flex flex-col">
           <video
             autoplay
@@ -34,7 +75,7 @@
               </div>
             </div>
             <div class="flex items-center justify-center pt-[30px] sm:pb-[70px]">
-              <div class="aspect-video w-full max-w-[1000px] px-4">
+              <!---<div class="aspect-video w-full max-w-[1000px] px-4">
                 <iframe
                   class="h-full w-full rounded-xl"
                   src="https://www.youtube.com/embed/lRgII2VKb38?si=Qlw34IM9JsidO6yQ"
@@ -44,6 +85,14 @@
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                   loading="lazy"
                 ></iframe>
+              </div>-->
+              <div class="w-[255px] lg:w-auto">
+                <p class="p-2 text-xl font-semibold text-white">Score excerpts:</p>
+                <div class="space-y-4">
+                  <Audio title="Falling" src="/assets/audio/Verticality_excerpt1.wav" />
+                  <Audio title="Descent" src="/assets/audio/Verticality_excerpt2.wav" />
+                  <Audio title="Vertigo" src="/assets/audio/Verticality_excerpt3.wav" />
+                </div>
               </div>
             </div>
           </div>
@@ -162,11 +211,13 @@
                 <img src="/assets/icons/IMDb.webp" class="h-[40px]" alt="IMDb Logo" />
               </a>
             </div>
-            <div class="w-[255px] lg:w-auto">
-              <p class="p-2 text-xl font-semibold text-white">Score excerpts:</p>
-              <div class="space-y-4">
-                <Audio title="Demon Calling" src="/assets/audio/1s2_excerpt1_2_master.wav" />
-                <Audio title="Sweet Tragedy" src="/assets/audio/1s2_excerpt2_2_master.wav" />
+            <div class="flex items-center justify-center pt-[30px] sm:pb-[70px]">
+              <div class="w-[255px] lg:w-auto">
+                <p class="p-2 text-xl font-semibold text-white">Score excerpts:</p>
+                <div class="space-y-4">
+                  <Audio title="Demon Calling" src="/assets/audio/1s2_excerpt1_2_master.wav" />
+                  <Audio title="Sweet Tragedy" src="/assets/audio/1s2_excerpt2_2_master.wav" />
+                </div>
               </div>
             </div>
           </div>
