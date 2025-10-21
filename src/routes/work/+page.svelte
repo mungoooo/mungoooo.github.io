@@ -44,7 +44,7 @@
                     title="Uncertain Horizon"
                     src="/assets/audio/Ballad_excerpt000_master.wav"
                   />
-                  <Audio title="Standoff" src="/assets/audio/Ballad_excerpt00_master.wav" />
+                  <Audio title="Standoff" src="/assets/audio/Ballad_excerpt001_master.wav" />
                 </div>
               </div>
             </div>
