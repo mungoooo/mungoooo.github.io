@@ -2,13 +2,13 @@
   import Audio from '../../components/Audio.svelte';
 </script>
 
-<div class="no-full-padding flex flex-col">
+<div class=" flex flex-col">
   <div class="relative flex flex-grow flex-col">
     <main
       class="mainminh full-padding2 flex flex-grow flex-col pt-[200px] sm:pt-[12px] md:ml-[150px]"
     >
       <section
-        class="full-work-padding mx-auto flex w-full max-w-[2000px] flex-col overflow-y-hidden pt-[20px] leading-relaxed [word-spacing:0.1rem] md:space-y-8 md:p-12"
+        class="full-work-padding2 full-work-padding mx-auto flex w-full max-w-[2000px] flex-col overflow-y-hidden pt-[20px] leading-relaxed [word-spacing:0.1rem] md:space-y-8 md:p-12"
       >
         <div class="mainminh-poster relative md:grid md:grid-cols-2">
           <div class="mainminh-poster h-full">
@@ -44,7 +44,7 @@
                     title="Uncertain Horizon"
                     src="/assets/audio/Ballad_excerpt000_master.wav"
                   />
-                  <Audio title="Standoff" src="/assets/audio/Ballad_excerpt001_master.wav" />
+                  <Audio title="Standoff" src="/assets/audio/Ballad_excerpt00_master.wav" />
                 </div>
               </div>
             </div>

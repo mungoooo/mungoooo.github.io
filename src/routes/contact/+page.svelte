@@ -1,9 +1,9 @@
 <main class="mainminh flex flex-grow flex-col pt-[200px] sm:pt-[132px] md:ml-[150px]">
   <section
-    class="text-secondary mx-auto flex w-full max-w-[1000px] flex-col space-y-3 overflow-y-auto p-6 leading-relaxed [word-spacing:0.1rem] sm:p-12"
+    class="text-secondary recentre-contact mx-auto flex w-full max-w-[1000px] flex-col space-y-3 overflow-y-auto p-6 leading-relaxed [word-spacing:0.1rem] sm:p-12"
   >
     <h1 class="text-style-primary font-style-2 mb-[5px] text-[30px]">Get in touch.</h1>
-    <h2>Got questions? Want to work together?</h2>
+    <h2>Questions? Want to work together?</h2>
     <h2>Feel free to reach out!</h2>
     <form
       target="_blank"
