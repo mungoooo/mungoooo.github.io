@@ -5,11 +5,47 @@
 <div class=" flex flex-col">
   <div class="relative flex flex-grow flex-col">
     <main
-      class="mainminh full-padding2 flex flex-grow flex-col pt-[200px] sm:pt-[12px] md:ml-[150px]"
+      class="mainminh full-padding2 flex flex-grow flex-col pt-[160px] sm:pt-[118px] md:ml-[150px] md:pt-[12px]"
     >
       <section
         class="full-work-padding2 full-work-padding mx-auto flex w-full max-w-[2000px] flex-col overflow-y-hidden pt-[20px] leading-relaxed [word-spacing:0.1rem] md:space-y-8 md:p-12"
       >
+        <div class="mainminh-vr relative flex flex-col">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute top-0 left-0 z-0 h-full w-full object-cover opacity-80"
+          >
+            <source src="/assets/videos/Amor_Eterno_Edit.mp4" type="video/mp4" />
+          </video>
+          <div class="relative z-10">
+            <div class="text-primary flex flex-col pt-[100px] text-[20px]">
+              <div
+                class="text-style-primary font-style-2 mb-[10px] flex items-center justify-center text-[30px]"
+              >
+                "Amor Eterno"
+              </div>
+              <div class="mb-[10px] flex items-center justify-center">Short Film (2025)</div>
+              <div class="flex items-center justify-center">
+                <span class="pr-[5px] italic">Directed by:</span>
+                Joshua Brad-Lee Garrido
+              </div>
+            </div>
+            <div class="flex items-center justify-center pt-[30px] sm:pb-[70px]">
+              <div class="w-[255px] lg:w-auto">
+                <p class="p-2 text-xl font-semibold text-white">Score excerpts:</p>
+                <div class="space-y-4">
+                  <Audio title="Wedding" src="/assets/audio/Amor_wedding_websiteedit_edit.wav" />
+                  <Audio title="Karaoke" src="/assets/audio/Amor_karaokescene_websiteedit.wav" />
+                  <Audio title="Credits" src="/assets/audio/Amor_credits_websiteedit_edit.wav" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="mainminh-poster relative md:grid md:grid-cols-2">
           <div class="mainminh-poster h-full">
             <img
