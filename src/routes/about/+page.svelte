@@ -101,7 +101,7 @@
                 December 5th, 2024
               </span>
             </h1>
-            <a href="../news/" target="_blank">
+            <a href="../news/#oneswallowtwo" target="_blank">
               <img
                 class="button3"
                 src="/assets/images/embed/1s2.webp"
