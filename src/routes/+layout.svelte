@@ -179,6 +179,11 @@
     href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet"
   />
+  <link rel="icon" type="image/png" href="/mungoooo.github.io/static/assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/mungoooo.github.io/static/assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="/mungoooo.github.io/static/assets/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/mungoooo.github.io/static/assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/mungoooo.github.io/static/assets/favicons/site.webmanifest" />
 </svelte:head>
 
 <div class={`flex min-h-screen flex-col bg-black bg-no-repeat ${getBgClass()}`}>
