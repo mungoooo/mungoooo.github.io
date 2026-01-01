@@ -394,7 +394,7 @@
     class={`flex min-h-[80px] w-full flex-grow flex-col items-center justify-center space-y-2 opacity-65 ${page.url.pathname !== '/' ? 'md:pl-[150px]' : ''}`}
   >
     <div class="inline justify-start text-center text-3xl">
-      <h1 class="text-secondary text-[15px]">Copyright © 2025 Mungo McLaggan</h1>
+      <h1 class="text-secondary text-[15px]">Copyright © 2026 Mungo McLaggan</h1>
     </div>
   </footer>
 </div>
