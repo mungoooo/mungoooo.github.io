@@ -20,37 +20,6 @@
     </div>
     <div
       class="fullpagenotif enterclear:left-5 absolute top-54 rounded-xl pt-[10px] pr-[10px] pl-[10px] backdrop-blur-3xl sm:top-40"
-    >
-      <div class="flex flex-col">
-        <div class="flex items-center justify-center p-[5px]">
-          <p class="font-style-2 text-primary text-[25px] font-bold">NEW RELEASE!</p>
-        </div>
-        <div class="flex flex-col">
-          <div>
-            <a
-              class="flex items-center justify-center"
-              href="https://mungomclaggan.com/releases/remembrance"
-              target="_blank"
-            >
-              <img
-                class="w-[100px] rounded-md"
-                src="assets/images/embed/FinalCover.webp"
-                alt="Remembrance Bandcamp Page"
-              />
-            </a>
-            <p class="text-primary font-style-2 mt-[5px] mb-[-5px] text-center text-[22px]">
-              Remembrance
-            </p>
-            <a
-              href="../releases/remembrance/"
-              target="_blank"
-              class="button5 mb-[5px] flex justify-center italic"
-            >
-              out now
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    ></div>
   </section>
 </main>

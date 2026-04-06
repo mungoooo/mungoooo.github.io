@@ -124,10 +124,17 @@
               </div>-->
               <div class="w-[255px] lg:w-auto">
                 <p class="p-2 text-xl font-semibold text-white">Score excerpts:</p>
-                <div class="space-y-4">
+                <div class="mb-12 space-y-4">
                   <Audio title="Falling" src="/assets/audio/Verticality_excerpt1.wav" />
                   <Audio title="Descent" src="/assets/audio/Verticality_excerpt2.wav" />
                   <Audio title="Vertigo" src="/assets/audio/Verticality_excerpt3.wav" />
+                </div>
+                <div class="grid grid-rows-1 items-center justify-center">
+                  <img
+                    src="/assets/laurels/vertical_remains/FEST2026dates_Laurel_whitewhite.webp"
+                    alt="FEST Official Selection Laurel"
+                    class="max-h-[200px]"
+                  />
                 </div>
               </div>
             </div>
