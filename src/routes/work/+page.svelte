@@ -131,7 +131,7 @@
                 </div>
                 <div class="grid grid-rows-1 items-center justify-center">
                   <img
-                    src="/assets/laurels/vertical_remains/FEST2026dates_Laurel_whitewhite.webp"
+                    src="/assets/laurels/FEST2026dates_Laurel_whitewhite.webp"
                     alt="FEST Official Selection Laurel"
                     class="max-h-[200px]"
                   />
