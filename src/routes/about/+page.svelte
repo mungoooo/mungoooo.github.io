@@ -88,7 +88,7 @@
 
         <span class="h-[2px] w-full bg-white/30"></span>
 
-        <div class="font-style-2 pr-[24px] pl-[24px] xl:mb-[124px]">
+        <!--<div class="font-style-2 pr-[24px] pl-[24px] xl:mb-[124px]">
           <h1 class="text-style-primary font-style-2 mb-[20px] text-center text-[30px]">
             RECENT NEWS:
           </h1>
@@ -114,7 +114,7 @@
             <a href="../news/" class="button4 font-light">news</a>
             page)
           </h1>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
