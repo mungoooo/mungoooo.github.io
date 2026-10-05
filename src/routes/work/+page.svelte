@@ -45,7 +45,7 @@
               <div class="grid grid-rows-1 items-center justify-center">
                 <img
                   src="/assets/laurels/amor/FNC55_Lauriers_CompetitionOfficielle_2026_EN_Blanc.webp"
-                  alt="Montreal Festival Du Nouveau Cinéma Official Selection Laurel"
+                  alt="Montreal Festival Du Nouveau Cinéma Official Competition Laurel"
                   class="max-h-[300px]"
                 />
               </div>
@@ -79,7 +79,7 @@
                 <img src="/assets/icons/IMDb.webp" class="h-[40px]" alt="IMDb Logo" />
               </a>
             </div>-->
-            <div class="flex items-center justify-center pt-[30px] sm:pb-[70px]">
+            <div class="flex flex-col items-center justify-center pt-[30px] sm:pb-[70px]">
               <div class="w-[255px] lg:w-auto">
                 <p class="p-2 text-xl font-semibold text-white">Score excerpts:</p>
                 <div class="space-y-4">
@@ -89,6 +89,18 @@
                   />
                   <Audio title="Standoff" src="/assets/audio/Ballad_excerpt001_master.wav" />
                 </div>
+              </div>
+              <div class="flex flex-row w-full items-center justify-center">
+              <img
+                src="/assets/laurels/ballad/IFF2026_Laurel-White.webp"
+                class="h-auto w-full min-w-0 flex-1 object-contain m-5"
+                alt="Stseptékwles re Sk’elép Indigenous Film Festival Official Selection Laurel"
+              />
+              <img
+                src="/assets/laurels/ballad/RNIFF_Laurels_White_31-scaled.webp"
+                alt="Red Nation International Film Festival Official Selection Laurel"
+                class="h-auto w-full min-w-0 flex-1 object-contain m-5"
+              />
               </div>
             </div>
           </div>
