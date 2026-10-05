@@ -33,14 +33,21 @@
                 Joshua Brad-Lee Garrido
               </div>
             </div>
-            <div class="flex items-center justify-center pt-[30px] sm:pb-[70px]">
-              <div class="w-[255px] lg:w-auto">
+            <div class="relative grid items-center justify-center pt-[30px] pr-[30px] pl-[30px] md:grid-cols-2">
+              <div>
                 <p class="p-2 text-xl font-semibold text-white">Score excerpts:</p>
                 <div class="space-y-4">
                   <Audio title="Wedding" src="/assets/audio/Amor_wedding_websiteedit_edit.wav" />
                   <Audio title="Karaoke" src="/assets/audio/Amor_karaokescene_websiteedit.wav" />
                   <Audio title="Credits" src="/assets/audio/Amor_credits_websiteedit_edit.wav" />
                 </div>
+              </div>
+              <div class="grid grid-rows-1 items-center justify-center">
+                <img
+                  src="/assets/laurels/amor/FNC55_Lauriers_CompetitionOfficielle_2026_EN_Blanc.webp"
+                  alt="Montreal Festival Du Nouveau Cinéma Official Selection Laurel"
+                  class="max-h-[300px]"
+                />
               </div>
             </div>
           </div>
@@ -131,7 +138,7 @@
                 </div>
                 <div class="grid grid-rows-1 items-center justify-center">
                   <img
-                    src="/assets/laurels/FEST2026dates_Laurel_whitewhite.webp"
+                    src="/assets/laurels/vertical_remains/FEST2026dates_Laurel_whitewhite.webp"
                     alt="FEST Official Selection Laurel"
                     class="max-h-[200px]"
                   />
