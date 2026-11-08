@@ -92,9 +92,14 @@
               </div>
               <div class="flex flex-row w-full items-center justify-center">
               <img
-                src="/assets/laurels/ballad/IFF2026_Laurel-White.webp"
+                src="/assets/laurels/ballad/IMG_0911.webp"
                 class="h-auto w-full min-w-0 flex-1 object-contain m-5"
-                alt="Stseptékwles re Sk’elép Indigenous Film Festival Official Selection Laurel"
+                alt="Stseptékwles re Sk’elép Indigenous Film Festival Winner Laurel"
+              />
+              <img
+                src="/assets/laurels/ballad/IMG_0989.webp"
+                alt="Whistler Film Festival Official Selection Laurel"
+                class="h-auto w-full min-w-0 flex-1 object-contain m-5"
               />
               <img
                 src="/assets/laurels/ballad/RNIFF_Laurels_White_31-scaled.webp"
